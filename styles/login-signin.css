@@ -1,0 +1,126 @@
+body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-arrow-wrapper {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    text-decoration: none;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.back-arrow-wrapper:hover {
+    cursor: pointer;
+}
+
+.back-arrow-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/back-arrow.png');
+    background-size: cover;
+    transition: background-image .3s;
+}
+
+.back-arrow-wrapper > p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color .3s;
+}
+
+.back-arrow-wrapper:hover > .back-arrow-icon {
+    background-image: url('../images/back-arrow-hover.png');
+}
+
+.back-arrow-wrapper:hover > p {
+    color: #c0c0c0
+}
+
+.container {
+    background-color: white;
+    margin: 20px auto;
+    width: 30%;
+    border-radius: 10px;
+    font-size: 0.9em;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.container form h1 {
+    color: #2A4267;
+    text-align: center;
+    margin-bottom: 4px;
+    font-size: 1.4em;
+}
+
+.container form input {
+    padding: 5px;
+    border-radius: 5px;
+    outline: 0;
+    color: rgba(17, 17, 17, 0.836);
+    border: 0.5px solid rgba(0, 0, 0, 0.486);
+}
+
+.container form input:focus {
+    border: 0.5px solid rgba(53, 74, 141, 0.904);
+}
+
+.container > form > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+.container > form > div > span {
+    display: flex;
+    gap: 4px;
+}
+
+.container > form > button[type='submit'] {
+    width: 50%;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    color: white;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: black;
+    transition: background-color .3s;
+}
+
+.container > form > button[type='submit']:hover {
+    background-color: rgb(19, 19, 19);
+    cursor: pointer;
+}
+
+.container > form > button[type='submit'] + p > a {
+    text-decoration: none;
+    color: rgb(47, 56, 107);
+    transition: color .3s;
+}
+
+.container > form > button[type='submit'] + p > a:hover {
+    color: rgb(101, 107, 136);
+    cursor: pointer;
+}
