@@ -1,0 +1,114 @@
+main {
+    width: 100%;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    height: 400px;
+    background-image: url('../images/hero-section-bg-capri.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    color: white;
+}
+
+.hero-section > h1 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.692);
+}
+
+.hero-section > p {
+    color: rgba(255, 255, 255, 0.904);
+    font-size: 0.95em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.692);
+}
+
+.main-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 23px;
+}
+
+.main-content > .programming-panel {
+    width: 100%;
+    border: 1px solid white;
+    padding: 15px 15px 30px 15px;
+}
+
+.main-content > .programming-panel > .days-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 100px;
+}
+
+.main-content > .programming-panel > .days-panel > .cinema-label {
+    font-size: 0.8em;
+    color: white;
+}
+
+.main-content > .programming-panel > .days-panel > .cinema-name {
+    font-size: 1em;
+    color: #83a4ca;
+    margin-bottom: 10px;
+}
+
+.main-content > .programming-panel > .days-panel > .days-buttons {
+    width: 100%;
+    height: 60px;
+}
+
+.main-content > .programming-panel > .days-panel > .days-buttons > button {
+    width: 50px;
+    height: 100%;
+    background-color: transparent;
+    border: 0.1px solid rgba(119, 119, 119, 0.507);
+}
+
+.main-content > .programming-panel > .days-panel > .days-buttons > button > p {
+    color: rgb(192, 192, 192);
+}
+
+.main-content > .programming-panel > .days-panel > .days-buttons > button.active {
+    border: 0.1px solid #83a4ca;
+}
+.main-content > .programming-panel > .days-panel > .days-buttons > button.active > p:first-child {
+    color: white;
+}
+
+.main-content > .programming-panel > .days-panel > .days-buttons > button.active > p:last-child {
+    color: #83a4ca;
+    font-weight: bold;
+}  
+
+hr {
+    width: 100%;
+    margin: 15px 0px;
+    border: 0.1px solid rgba(255, 255, 255, 0.151);
+}
+
+.movies-panel {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+    border: 1px solid white;
+}
+
+.movies-panel > .left-wrapper {
+    border: 1px solid white;
+    width: 320px;
+}
+
+.movies-panel > .right-wrapper {
+    width: calc(100% - 320px - 25px);
+    border: 1px solid red;
+}
