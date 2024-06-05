@@ -129,7 +129,7 @@ hr {
     object-fit: cover;
 }
 
-.movies-panel > .left-wrapper > .movie-info-wrapper > .rating-wrapper > span {
+.movies-panel > .left-wrapper > .movie-info-wrapper > .rating-wrapper > .rating-label {
     color: white;
 }
 

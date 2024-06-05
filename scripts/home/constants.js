@@ -1,5 +1,5 @@
-import Movie from "./models/Movie";
-import { getImageURL } from "./utils/path";
+import Movie from './models/Movie.js'
+import { getImageURL } from "./utils/path.js";
 
 const knyMugenTrain = new Movie(
 	'Demon Slayer: Mugen Train - O Filme',
