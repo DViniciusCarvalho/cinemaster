@@ -30,16 +30,13 @@ main {
 
 .main-content {
     width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 23px;
 }
 
 .main-content > .programming-panel {
-    width: 100%;
+    width: calc(100% - 2 * 23px);
     border: 1px solid white;
     padding: 15px 15px 30px 15px;
+    margin: 23px;
 }
 
 .main-content > .programming-panel > .days-panel {
@@ -156,4 +153,9 @@ hr {
 .movies-panel > .right-wrapper {
     width: calc(100% - 200px - 10px);
     border: 1px solid red;
+}
+
+.anime-background-wrapper {
+    width: 100%;
+    background-image: url('../');
 }
