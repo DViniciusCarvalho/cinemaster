@@ -115,12 +115,24 @@ hr {
     object-fit: cover;
 }
 
+#movie-name {
+    text-decoration: none;
+    margin: 8px 0px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    color: white;
+}
+
+
 .movies-panel > .left-wrapper > .movie-info-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 220px;
-    height: 60px;
+    height: 30px;
 }
 
 .movies-panel > .left-wrapper > .movie-info-wrapper > .rating-wrapper > img {
