@@ -39,7 +39,7 @@
                     <div class="days-panel">
                         <span class="cinema-label">Cinema:</span>
                         <span class="cinema-name">CineMaster</span>
-                        <div class="days-buttons">
+                        <div id="days-buttons">
                             <button class="active"> 
                                 <p>Hoje</p> 
                                 <p>12/06</p> 
@@ -73,20 +73,24 @@
                     <hr>
                     <div class="movies-panel">
                         <div class="left-wrapper">
-                            <img src="images/movies/dbs-movie-post.jpg" alt="selected movie poster image" class="movie-poster">
+                            <img alt="selected movie poster image" id="movie-poster">
                             <div class="movie-info-wrapper">
                                 <div class="rating-wrapper">
-                                    <img class="rating-star" src="images/rating-full.png" alt="rating star icon">
-                                    <img class="rating-star" src="images/rating-full.png" alt="rating star icon">
-                                    <img class="rating-star" src="images/rating-full.png" alt="rating star icon">
-                                    <img class="rating-star" src="images/rating-full.png" alt="rating star icon">
-                                    <img class="rating-star" src="images/rating-full.png" alt="rating star icon">
-                                    <span class="rating-label">5</span>
+                                    <img class="rating-star" src="images/rating-void.png" alt="rating star icon">
+                                    <img class="rating-star" src="images/rating-void.png" alt="rating star icon">
+                                    <img class="rating-star" src="images/rating-void.png" alt="rating star icon">
+                                    <img class="rating-star" src="images/rating-void.png" alt="rating star icon">
+                                    <img class="rating-star" src="images/rating-void.png" alt="rating star icon">
+                                    <span class="rating-label">0</span>
                                 </div>
-                                <button class="sinopse-button">SINOPSE</button>
+                                <a id="sinopse-button">SINOPSE</a>
                             </div>
                         </div>
-                        <div class="right-wrapper"></div>
+                        <div class="right-wrapper">
+                            <ul id="movies-list-wrapper">
+                            </ul>
+                            <div class="programming-wrapper"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="anime-background-wrapper">

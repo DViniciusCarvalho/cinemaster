@@ -19,6 +19,7 @@ export default class Movie {
 		this.rating = rating;
 		this.imageURL = imageURL;
 		this.trailerURL = trailerURL;
+		this.pageLink = pageLink;
 		this.duration = duration;
 		this.classification = classification;
 	}

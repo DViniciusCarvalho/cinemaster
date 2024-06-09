@@ -58,30 +58,30 @@ main {
     margin-bottom: 10px;
 }
 
-.main-content > .programming-panel > .days-panel > .days-buttons {
+.main-content > .programming-panel > .days-panel > #days-buttons {
     width: 100%;
     height: 60px;
 }
 
-.main-content > .programming-panel > .days-panel > .days-buttons > button {
+.main-content > .programming-panel > .days-panel > #days-buttons > button {
     width: 50px;
     height: 100%;
     background-color: transparent;
     border: 0.1px solid rgba(119, 119, 119, 0.507);
 }
 
-.main-content > .programming-panel > .days-panel > .days-buttons > button > p {
+.main-content > .programming-panel > .days-panel > #days-buttons > button > p {
     color: rgb(192, 192, 192);
 }
 
-.main-content > .programming-panel > .days-panel > .days-buttons > button.active {
+.main-content > .programming-panel > .days-panel > #days-buttons > button.active {
     border: 0.1px solid #83a4ca;
 }
-.main-content > .programming-panel > .days-panel > .days-buttons > button.active > p:first-child {
+.main-content > .programming-panel > .days-panel > #days-buttons > button.active > p:first-child {
     color: white;
 }
 
-.main-content > .programming-panel > .days-panel > .days-buttons > button.active > p:last-child {
+.main-content > .programming-panel > .days-panel > #days-buttons > button.active > p:last-child {
     color: #83a4ca;
     font-weight: bold;
 }  
@@ -106,9 +106,9 @@ hr {
     padding: 20px;
 }
 
-.movies-panel > .left-wrapper > .movie-poster {
-    width: 100%;
-    height: 320px;
+.movies-panel > .left-wrapper > #movie-poster {
+    width: 250px;
+    height: 375px;
     object-fit: cover;
 }
 
@@ -130,7 +130,8 @@ hr {
     color: white;
 }
 
-.movies-panel > .left-wrapper > .movie-info-wrapper > .sinopse-button {
+.movies-panel > .left-wrapper > .movie-info-wrapper > #sinopse-button {
+    text-decoration: none;
     width: 100px;
     height: 30px;
     background-color: #506d8f;
@@ -152,10 +153,42 @@ hr {
 
 .movies-panel > .right-wrapper {
     width: calc(100% - 200px - 10px);
+    display: flex;
+    flex-direction: column;
     border: 1px solid red;
+}
+
+.movies-panel > .right-wrapper > #movies-list-wrapper {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    height: 270px;
+    overflow-x: auto;
+}
+
+.movies-panel > .right-wrapper > #movies-list-wrapper > li {
+    min-width: 150px;
+    height: 225px;
+    border: 0.1px solid rgba(0, 0, 0, 0.342);
+    list-style-type: none;
+}
+
+.movies-panel > .right-wrapper > #movies-list-wrapper > li > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movies-panel > .right-wrapper > .programming-wrapper {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .anime-background-wrapper {
     width: 100%;
-    background-image: url('../');
+    height: 600px;
+    background-image: url('../images/anime-bg.jpg');
+    background-size: cover;
 }

@@ -1,7 +1,9 @@
-const STARS_NUMBER = 5;
-const VOID_STAR_ID = 0;
-const FULL_STAR_ID = 1;
-const HALF_STAR_ID = 2;
+import { 
+    RATING_STARS_MAX_NUMBER,
+	RATING_STAR_MAPPING_VOID_ID,
+	RATING_STAR_MAPPING_FULL_ID,
+	RATING_STAR_MAPPING_HALF_ID
+} from '../constants.js';
 
 
 function getRatingStarMapList(movieRating) {
@@ -12,74 +14,73 @@ function getRatingStarMapList(movieRating) {
 
     if (movieRating == 0) {
         starsMap.push(
-            VOID_STAR_ID,
-            VOID_STAR_ID,
-            VOID_STAR_ID,
-            VOID_STAR_ID,
-            VOID_STAR_ID
+            RATING_STAR_MAPPING_VOID_ID,
+            RATING_STAR_MAPPING_VOID_ID,
+            RATING_STAR_MAPPING_VOID_ID,
+            RATING_STAR_MAPPING_VOID_ID,
+            RATING_STAR_MAPPING_VOID_ID
         );
     }    
     else if (movieRating < 1) {
         starsMap.push(
-            HALF_STAR_ID        ,
-            VOID_STAR_ID,
-            VOID_STAR_ID,
-            VOID_STAR_ID,
-            VOID_STAR_ID
+            RATING_STAR_MAPPING_HALF_ID        ,
+            RATING_STAR_MAPPING_VOID_ID,
+            RATING_STAR_MAPPING_VOID_ID,
+            RATING_STAR_MAPPING_VOID_ID,
+            RATING_STAR_MAPPING_VOID_ID
         );
     }
     else if (hasDecimalPart) {
         for (let i = 0; i < movieRatingInteger; i++) {
-            starsMap.push(FULL_STAR_ID);
+            starsMap.push(RATING_STAR_MAPPING_FULL_ID);
         }
 
         starsMap.push(2);
         const starMapLength = starsMap.length;
 
-        for (let i = 0; i < (STARS_NUMBER - starMapLength); i++) {
-            starsMap.push(VOID_STAR_ID);
+        for (let i = 0; i < (RATING_STARS_MAX_NUMBER - starMapLength); i++) {
+            starsMap.push(RATING_STAR_MAPPING_VOID_ID);
         }
 
     }
     else {
         for (let i = 0; i < movieRatingInteger; i++) {
-            starsMap.push(FULL_STAR_ID);
+            starsMap.push(RATING_STAR_MAPPING_FULL_ID);
         }
 
         const starMapLength = starsMap.length;
 
-        for (let i = 0; i < (STARS_NUMBER - starMapLength); i++) {
-            starsMap.push(VOID_STAR_ID);
+        for (let i = 0; i < (RATING_STARS_MAX_NUMBER - starMapLength); i++) {
+            starsMap.push(RATING_STAR_MAPPING_VOID_ID);
         }
     }
 
     return starsMap;
 }
 
-
-export function setRatingStars(movieData) {
-    console.log('b')
+function setMovieRatingStars(movieRating) {
     const ratingStarLabelElement = document.getElementsByClassName('rating-label')[0];
     const ratingStarElements = document.getElementsByClassName('rating-star');
     const ratingStarElementsList = Array.from(ratingStarElements);
 
-    const movieRating = movieData.rating;
     const starMapList = getRatingStarMapList(movieRating);
 
     ratingStarLabelElement.innerText = movieRating;
 
-    for (let i = 0; i < STARS_NUMBER; i++) {
+    for (let i = 0; i < RATING_STARS_MAX_NUMBER; i++) {
         const starElement = ratingStarElementsList[i];
         const starMapValue = starMapList[i];
 
-        if (starMapValue == VOID_STAR_ID) {
+        if (starMapValue == RATING_STAR_MAPPING_VOID_ID) {
             starElement.src = '../../../images/rating-void.png';
         }
-        else if (starMapValue == FULL_STAR_ID) {
+        else if (starMapValue == RATING_STAR_MAPPING_FULL_ID) {
             starElement.src = '../../../images/rating-full.png';
         }
-        else if (starMapValue == HALF_STAR_ID) {
+        else if (starMapValue == RATING_STAR_MAPPING_HALF_ID) {
             starElement.src = '../../../images/rating-half.png';
         }
     }
 }
+
+export { setMovieRatingStars }

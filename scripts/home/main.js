@@ -1,11 +1,16 @@
-import { initialMovieData } from "./constants.js";
-import { setRatingStars } from "./dom/moviesPanel.js";
-import { addDaysButtonsListeners } from "./dayButton.js";
+import { WEEKDAY_PROGRAMMING, WEEKDAY_MOVIES, CINEMA_START_DAY } from "./constants.js";
+import { addDaysButtonsListeners } from "./utils/addDaysButtonsListeners.js";
+import { changeDataByClickingDayButton } from "./utils/changeDataByClickingDayButton.js";
+
 
 function init() {
-    console.log('a')
+    const weekdayCinemaFirstDayMovies = WEEKDAY_MOVIES[CINEMA_START_DAY];
+    const weekdayCinemaFirstDayProgramming = WEEKDAY_PROGRAMMING[CINEMA_START_DAY];
+
     addDaysButtonsListeners();
-    setRatingStars(initialMovieData);
+
+    // simula um click no botão de dia da semana para resetar todos os valores que nem um click no botão de data faria
+    changeDataByClickingDayButton(weekdayCinemaFirstDayMovies, weekdayCinemaFirstDayProgramming);
 }
 
 document.addEventListener('DOMContentLoaded', () => init());

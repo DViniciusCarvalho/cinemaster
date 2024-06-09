@@ -1,5 +1,4 @@
-import Movie from './models/Movie.js'
-import { getImageURL } from "./utils/path.js";
+import Movie from './models/Movie.js';
 
 const knyMugenTrain = new Movie(
 	'Demon Slayer: Mugen Train - O Filme',
@@ -8,7 +7,7 @@ const knyMugenTrain = new Movie(
 	'Haruo Sotozaki',
 	'Ação, Animação, Aventura',
 	4.9,
-	getImageURL('kny-movie-post.jpg'),
+	'./images/movies/kny-movie-post.jpg',
 	'https://youtu.be/bFwdl2PDAFM?si=OvjCAa99hrOmlEdt',
 	{
 		seconds: 117,
@@ -27,7 +26,7 @@ const dbsBroly = new Movie(
 	'Tatsuya Nagamine',
 	'Animação, Aventura',
 	4.3,
-	getImageURL('dbs-movie-post.jpg'),
+	'./images/movies/dbs-movie-post.jpg',
 	'https://youtu.be/IRG_el_OpQg?si=uo2eorabcpmucPhw',
 	{
 		minutes: 100,
@@ -46,7 +45,7 @@ const opStampede = new Movie(
 	'Takashi Otsuka',
 	'Ação, Aventura, Animação',
 	4.5,
-	getImageURL('op-stamp-movie-post.jpg'),
+	'./images/movies/op-stamp-movie-post.jpg',
 	'https://youtu.be/S8_YwFLCh4U?si=cKigVRWPbgLBzpIG',
 	{
 		minutes: 100,
@@ -65,7 +64,7 @@ const pkmFirstMovie = new Movie(
 	'Kunihiko Yuyama',
 	'Aventura, Animação, Fantasia',
 	3.5,
-	getImageURL('pkm-movie-post.jpg'),
+	'./images/movies/pkm-movie-post.jpg',
 	'https://youtu.be/hX-NHafvY5I?si=YAXW65Oe-p3u3s5v&t=18',
 	{
 		minutes: 75,
@@ -84,7 +83,7 @@ const silentVoice = new Movie(
 	'Naoko Yamada',
 	'Drama, Romance, Animação',
 	4.8,
-	getImageURL('sv-movie-post.jpg'),
+	'./images/movies/sv-movie-post.jpg',
 	'https://youtu.be/nfK6UgLra7g?si=9-OSshrvvno0UpCm',
 	{
 		minutes: 129,
@@ -103,7 +102,7 @@ const saoOrdinalScale = new Movie(
 	'Tomohiko Itō',
 	'Ação, Aventura, Fantasia, Ficção Científica',
 	4.2,
-	getImageURL('sao-movie-post.jpg'),
+	'./images/movies/sao-movie-post.jpg',
 	'https://youtu.be/Xu3FqvH11To?si=Ag-BAUEfOj_gxLgm',
 	{
 		minutes: 119,
@@ -122,7 +121,7 @@ const opZ = new Movie(
 	'Tatsuya Nagamine',
 	'Ação, Aventura, Animação',
 	4.4,
-	getImageURL('op-z-movie-post.jpg'),
+	'./images/movies/op-z-movie-post.jpg',
 	'https://youtu.be/1gGt1Mg_zSo?si=b8tjFetc198JA9Om',
 	{
 		minutes: 108,
@@ -141,7 +140,7 @@ const dgmAdventure = new Movie(
 	'Tomohisa Taguchi',
 	'Animação, Aventura, Fantasia',
 	4.6,
-	getImageURL('dgm-movie-post.jpg'),
+	'./images/movies/dgm-movie-post.jpg',
 	'https://youtu.be/wR7U3IDmFYA?si=WrQQXFP_P_ZoxUEN',
 	{
 		minutes: 94,
@@ -160,7 +159,7 @@ const ygohDarkSide = new Movie(
 	'Satoshi Kuwabara',
 	'Animação, Ação, Fantasia',
 	4.3,
-	getImageURL('ygoh-movie-post.jpg'),
+	'./images/movies/ygoh-movie-post.jpg',
 	'https://youtu.be/7tmC0KE-ASs?si=ICZGj6i2YRq53Epk',
 	{
 		minutes: 130,
@@ -179,7 +178,7 @@ const nrtsWillOfFire = new Movie(
 	'Masahiko Murata',
 	'Ação, Aventura, Animação',
 	4.1,
-	getImageURL('nrts-movie-post.jpg'),
+	'./images/movies/nrts-movie-post.jpg',
 	'https://youtu.be/xR62roSYoAo?si=BHHnCmjM6PR5O8tK',
 	{
 		minutes: 96,
@@ -198,7 +197,7 @@ const bnhWorldHeroes = new Movie(
 	'Kenji Nagasaki',
 	'Ação, Aventura, Animação',
 	4.5,
-	getImageURL('bnh-movie-post.jpg'),
+	'./images/movies/bnh-movie-post.jpg',
 	'https://youtu.be/ZclBluzAZVE?si=AQjDXSAMMAUu5lKp',
 	{
 		minutes: 104,
@@ -217,7 +216,7 @@ const jjk0 = new Movie(
 	'Sung Hoo Park',
 	'Ação, Sobrenatural, Animação',
 	4.7,
-	getImageURL('jjk-movie-post.jpg'),
+	'./images/movies/jjk-movie-post.jpg',
 	'https://youtu.be/aTpSx7ERT7w?si=kaqIdvtCmt8w8seE',
 	{
 		minutes: 104,
@@ -229,7 +228,52 @@ const jjk0 = new Movie(
 	}
 );
 
-const weekdaysMovies = {
+const WEEKDAY_PROGRAMMING = {
+	seg: [
+		{
+
+		},
+		{},
+		{},
+		{}
+	],
+	ter: [
+		{},
+		{},
+		{}
+	],
+	qua: [
+		{},
+		{},
+		{},
+		{},
+		{}
+	],
+	qui: [
+		{},
+		{},
+		{}
+	],
+	sex: [
+		{},
+		{},
+		{}
+	],
+	sab: [
+		{},
+		{},
+		{},
+		{}
+	],
+	dom: [
+		{},
+		{},
+		{},
+		{}
+	]
+};
+
+const WEEKDAY_MOVIES = {
 	seg: [
 		knyMugenTrain,
 		dbsBroly,
@@ -242,11 +286,11 @@ const weekdaysMovies = {
 		saoOrdinalScale
 	],
 	qua: [
+		ygohDarkSide,
+		jjk0,
 		opZ,
 		dgmAdventure,
-		ygohDarkSide,
-		silentVoice,
-		jjk0
+		silentVoice
 	],
 	qui: [
 		nrtsWillOfFire,
@@ -272,8 +316,11 @@ const weekdaysMovies = {
 	]
 };
 
-const initialWeekday = 'seg';
-const initialMovieData = weekdaysMovies[initialWeekday][0];
+const CINEMA_START_DAY = 'qua';
+const RATING_STARS_MAX_NUMBER = 5;
+const RATING_STAR_MAPPING_VOID_ID = 0;
+const RATING_STAR_MAPPING_FULL_ID = 1;
+const RATING_STAR_MAPPING_HALF_ID = 2;
 
 export {
 	knyMugenTrain,
@@ -288,6 +335,11 @@ export {
 	nrtsWillOfFire,
 	bnhWorldHeroes,
 	jjk0,
-	weekdaysMovies,
-	initialMovieData
+	WEEKDAY_PROGRAMMING,
+	WEEKDAY_MOVIES,
+	CINEMA_START_DAY,
+	RATING_STARS_MAX_NUMBER,
+	RATING_STAR_MAPPING_VOID_ID,
+	RATING_STAR_MAPPING_FULL_ID,
+	RATING_STAR_MAPPING_HALF_ID
 }
