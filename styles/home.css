@@ -36,7 +36,7 @@ main {
     width: calc(100% - 2 * 23px);
     border: 1px solid white;
     padding: 15px 15px 30px 15px;
-    margin: 23px;
+    margin: 23px auto;
 }
 
 .main-content > .programming-panel > .days-panel {
@@ -68,6 +68,12 @@ main {
     height: 100%;
     background-color: transparent;
     border: 0.1px solid rgba(119, 119, 119, 0.507);
+    transition: background-color .3s;
+}
+
+.main-content > .programming-panel > .days-panel > #days-buttons > button:hover {
+    background-color: #3e4144;
+    cursor: pointer;
 }
 
 .main-content > .programming-panel > .days-panel > #days-buttons > button > p {
@@ -75,7 +81,7 @@ main {
 }
 
 .main-content > .programming-panel > .days-panel > #days-buttons > button.active {
-    border: 0.1px solid #83a4ca;
+    border: 2px solid #83a4ca;
 }
 .main-content > .programming-panel > .days-panel > #days-buttons > button.active > p:first-child {
     color: white;
@@ -97,18 +103,15 @@ hr {
     display: flex;
     justify-content: space-between;
     height: 600px;
-    border: 1px solid white;
 }
 
 .movies-panel > .left-wrapper {
-    border: 1px solid white;
-    width: 320px;
-    padding: 20px;
+    width: 220px;
 }
 
 .movies-panel > .left-wrapper > #movie-poster {
-    width: 250px;
-    height: 375px;
+    width: 220px;
+    height: 330px;
     object-fit: cover;
 }
 
@@ -116,13 +119,13 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 220px;
     height: 60px;
 }
 
 .movies-panel > .left-wrapper > .movie-info-wrapper > .rating-wrapper > img {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     object-fit: cover;
 }
 
@@ -146,32 +149,55 @@ hr {
     transition: background-color .3s;
 }
 
-.movies-panel > .left-wrapper > .movie-info-wrapper > .sinopse-button:hover {
-    background-color: #5b89be;
+.movies-panel > .left-wrapper > .movie-info-wrapper > #sinopse-button:hover {
+    background-color: #5d95d6;
     cursor: pointer;
 }
 
 .movies-panel > .right-wrapper {
-    width: calc(100% - 200px - 10px);
+    width: calc(100% - 220px - 10px);
+    max-width: calc(100% - 220px - 10px) !important;
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
 }
+
+
+/* MOVIES LIST SECTION */
+
 
 .movies-panel > .right-wrapper > #movies-list-wrapper {
     display: flex;
+    max-width: calc(100% - 2 * 20px);
+    margin: 0px 20px 20px 20px;
     gap: 10px;
-    padding: 20px;
-    height: 270px;
+    min-height: 190px;
+    padding: 5px 5px;
     overflow-x: auto;
+    overflow-y: hidden;
 }
 
+.movies-panel > .right-wrapper > #movies-list-wrapper::-webkit-scrollbar {
+    height: 4px;
+    background-color: rgb(65, 65, 65);
+} 
+
 .movies-panel > .right-wrapper > #movies-list-wrapper > li {
-    min-width: 150px;
-    height: 225px;
+    min-width: 120px;
+    height: 180px;
     border: 0.1px solid rgba(0, 0, 0, 0.342);
     list-style-type: none;
+    transition: transform 1s;
 }
+
+.movies-panel > .right-wrapper > #movies-list-wrapper > li:hover {
+    cursor: pointer;
+    transform: translate(-3px, -3px);
+}
+
+.movies-panel > .right-wrapper > #movies-list-wrapper > li.active-movie {
+    border: 2px solid #5d95d6;
+}
+
 
 .movies-panel > .right-wrapper > #movies-list-wrapper > li > img {
     width: 100%;
@@ -179,11 +205,76 @@ hr {
     object-fit: cover;
 }
 
-.movies-panel > .right-wrapper > .programming-wrapper {
+
+
+
+/* PROGRAMMING SECTION */
+
+.movies-panel > .right-wrapper > #programming-wrapper {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    list-style-type: none;
     gap: 20px;
+    overflow-y: auto;
+}
+
+.movies-panel > .right-wrapper > #programming-wrapper::-webkit-scrollbar {
+    width: 7px;
+    background-color: rgb(65, 65, 65);
+} 
+
+.movies-panel > .right-wrapper > #programming-wrapper > .movie-programming {
+    width: 100%;
+    padding: 10px;
+}
+
+.movies-panel > .right-wrapper > #programming-wrapper > .movie-programming > h3 {
+    color: #83a4ca;
+    margin-bottom: 10px;
+}
+
+.movies-panel > .right-wrapper > #programming-wrapper > .movie-programming > .programming-time-wrapper {
+    margin-bottom: 5px;
+    display: flex;
+    padding: 6px 10px;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.1px solid rgba(119, 119, 119, 0.507);
+}
+
+.movies-panel > .right-wrapper > #programming-wrapper > .movie-programming > .programming-time-wrapper:last-child {
+    margin: 0;
+}
+
+.movies-panel > .right-wrapper > #programming-wrapper > .movie-programming > .programming-time-wrapper > .room-number {
+    color:white;
+}
+
+.movies-panel > .right-wrapper > #programming-wrapper > .movie-programming > .programming-time-wrapper > .time-buttons-wrapper {
+    display: flex;
+    gap: 6px;
+    width: 50%;
+    height: 22px;
+}
+
+.movies-panel > .right-wrapper > #programming-wrapper > .movie-programming > .programming-time-wrapper > .time-buttons-wrapper > .time-button {
+    height: 22px;
+    width: 70px;
+    padding-top: 2px;
+    background-color: #83a4ca;
+    border: none;
+    border-radius: 3px;
+    color: #2e2e2e;
+    font-weight: bold;
+    transition: background-color .3s, color .3s;
+}
+
+.movies-panel > .right-wrapper > #programming-wrapper > .movie-programming > .programming-time-wrapper > .time-buttons-wrapper > .time-button:hover {
+    background-color: transparent;
+    border: 2px solid #83a4ca;
+    color: #83a4ca;
+    cursor: pointer;
 }
 
 .anime-background-wrapper {

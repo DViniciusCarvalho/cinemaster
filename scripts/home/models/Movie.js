@@ -8,6 +8,7 @@ export default class Movie {
 		rating,
 		imageURL,
 		trailerURL,
+		pageLink,
 		duration,
 		classification,
 	) {

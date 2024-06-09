@@ -1,6 +1,6 @@
 import { WEEKDAY_PROGRAMMING, WEEKDAY_MOVIES, CINEMA_START_DAY } from "./constants.js";
-import { addDaysButtonsListeners } from "./utils/addDaysButtonsListeners.js";
-import { changeDataByClickingDayButton } from "./utils/changeDataByClickingDayButton.js";
+import { addDaysButtonsListeners } from "./functions/addDaysButtonsListeners.js";
+import { changeDataByClickingDayButton } from "./functions/changeDataByClickingDayButton.js";
 
 
 function init() {

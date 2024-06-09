@@ -1,4 +1,4 @@
-import Movie from './models/Movie.js';
+import Movie from './models/Movie.js'
 
 const knyMugenTrain = new Movie(
 	'Demon Slayer: Mugen Train - O Filme',
@@ -9,6 +9,7 @@ const knyMugenTrain = new Movie(
 	4.9,
 	'./images/movies/kny-movie-post.jpg',
 	'https://youtu.be/bFwdl2PDAFM?si=OvjCAa99hrOmlEdt',
+	'',
 	{
 		seconds: 117,
 		hours: '1h57 min'
@@ -28,6 +29,7 @@ const dbsBroly = new Movie(
 	4.3,
 	'./images/movies/dbs-movie-post.jpg',
 	'https://youtu.be/IRG_el_OpQg?si=uo2eorabcpmucPhw',
+	'',
 	{
 		minutes: 100,
 		hours: '1h40min'
@@ -47,6 +49,7 @@ const opStampede = new Movie(
 	4.5,
 	'./images/movies/op-stamp-movie-post.jpg',
 	'https://youtu.be/S8_YwFLCh4U?si=cKigVRWPbgLBzpIG',
+	'',
 	{
 		minutes: 100,
 		hours: '1h40min'
@@ -66,6 +69,7 @@ const pkmFirstMovie = new Movie(
 	3.5,
 	'./images/movies/pkm-movie-post.jpg',
 	'https://youtu.be/hX-NHafvY5I?si=YAXW65Oe-p3u3s5v&t=18',
+	'',
 	{
 		minutes: 75,
 		hours: '1h15min'
@@ -85,6 +89,7 @@ const silentVoice = new Movie(
 	4.8,
 	'./images/movies/sv-movie-post.jpg',
 	'https://youtu.be/nfK6UgLra7g?si=9-OSshrvvno0UpCm',
+	'',
 	{
 		minutes: 129,
 		hours: '2h09min'
@@ -104,6 +109,7 @@ const saoOrdinalScale = new Movie(
 	4.2,
 	'./images/movies/sao-movie-post.jpg',
 	'https://youtu.be/Xu3FqvH11To?si=Ag-BAUEfOj_gxLgm',
+	'',
 	{
 		minutes: 119,
 		hours: '1h59min'
@@ -123,6 +129,7 @@ const opZ = new Movie(
 	4.4,
 	'./images/movies/op-z-movie-post.jpg',
 	'https://youtu.be/1gGt1Mg_zSo?si=b8tjFetc198JA9Om',
+	'',
 	{
 		minutes: 108,
 		hours: '1h48min'
@@ -142,6 +149,7 @@ const dgmAdventure = new Movie(
 	4.6,
 	'./images/movies/dgm-movie-post.jpg',
 	'https://youtu.be/wR7U3IDmFYA?si=WrQQXFP_P_ZoxUEN',
+	'',
 	{
 		minutes: 94,
 		hours: '1h34min'
@@ -161,6 +169,7 @@ const ygohDarkSide = new Movie(
 	4.3,
 	'./images/movies/ygoh-movie-post.jpg',
 	'https://youtu.be/7tmC0KE-ASs?si=ICZGj6i2YRq53Epk',
+	'',
 	{
 		minutes: 130,
 		hours: '2h07min'
@@ -180,6 +189,7 @@ const nrtsWillOfFire = new Movie(
 	4.1,
 	'./images/movies/nrts-movie-post.jpg',
 	'https://youtu.be/xR62roSYoAo?si=BHHnCmjM6PR5O8tK',
+	'',
 	{
 		minutes: 96,
 		hours: '1h35min'
@@ -199,6 +209,7 @@ const bnhWorldHeroes = new Movie(
 	4.5,
 	'./images/movies/bnh-movie-post.jpg',
 	'https://youtu.be/ZclBluzAZVE?si=AQjDXSAMMAUu5lKp',
+	'',
 	{
 		minutes: 104,
 		hours: '1h44min'
@@ -218,6 +229,7 @@ const jjk0 = new Movie(
 	4.7,
 	'./images/movies/jjk-movie-post.jpg',
 	'https://youtu.be/aTpSx7ERT7w?si=kaqIdvtCmt8w8seE',
+	'',
 	{
 		minutes: 104,
 		hours: '1h44min'
@@ -229,47 +241,281 @@ const jjk0 = new Movie(
 );
 
 const WEEKDAY_PROGRAMMING = {
-	seg: [
-		{
-
-		},
-		{},
-		{},
-		{}
-	],
-	ter: [
-		{},
-		{},
-		{}
-	],
 	qua: [
-		{},
-		{},
-		{},
-		{},
-		{}
+		{
+			movieData: opZ,
+			programming: [
+				{
+					room: 1,
+					times: ['18:50', '21:20']
+				},
+				{
+					room: 3,
+					times: ['15:35', '18:10', '20:45']
+				}
+			]
+		},
+		{
+			movieData: dgmAdventure,
+			programming: [
+				{
+					room: 4,
+					times: ['16:20', '21:15']
+				}
+			]
+		},
+		{
+			movieData: ygohDarkSide,
+			programming: [
+				{
+					room: 4,
+					times: ['14:00', '18:30']
+				}
+			]
+		},
+		{
+			movieData: silentVoice,
+			programming: [
+				{
+					room: 6,
+					times: ['17:20', '20:20']
+				}
+			]
+		},
+		{			
+			movieData: jjk0,
+			programming: [
+				{
+					room: 2,
+					times: ['16:10', '18:30']
+				}
+			]
+		}
 	],
 	qui: [
-		{},
-		{},
-		{}
+		{			
+			movieData: nrtsWillOfFire,
+			programming: [
+				{
+					room: 2,
+					times: ['16:15']
+				}
+			]
+		},
+		{			
+			movieData: bnhWorldHeroes,
+			programming: [
+				{
+					room: 3,
+					times: ['14:30', '16:50', '19:10', '21:30']
+				}
+			]
+		},
+		{			
+			movieData: bnhWorldHeroes,
+			programming: [
+				{
+					room: 5,
+					times: ['16:30', '21:20']
+				},
+				{
+					room: 1,
+					times: ['14:10', '18:50']
+				}
+			]
+		}
 	],
 	sex: [
-		{},
-		{},
-		{}
+		{			
+			movieData: knyMugenTrain,
+			programming: [
+				{
+					room: 2,
+					times: ['16:15']
+				}
+			]
+		},
+		{			
+			movieData: dbsBroly,
+			programming: [
+				{
+					room: 3,
+					times: ['14:30', '16:50', '19:10', '21:30']
+				}
+			]
+		},
+		{			
+			movieData: opStampede,
+			programming: [
+				{
+					room: 4,
+					times: ['16:30', '21:10']
+				},
+				{
+					room: 4,
+					times: ['14:10', '18:50']
+				}
+			]
+		}
 	],
 	sab: [
-		{},
-		{},
-		{},
-		{}
+		{			
+			movieData: saoOrdinalScale,
+			programming: [
+				{
+					room: 1,
+					times: ['18:50', '21:20']
+				},
+				{
+					room: 3,
+					times: ['15:35', '18:10', '20:45']
+				}
+			]
+		},
+		{			
+			movieData: opZ,
+			programming: [
+				{
+					room: 2,
+					times: ['13:50', '16:10', '18:30']
+				}
+			]
+		},
+		{			
+			movieData: dgmAdventure,
+			programming: [
+				{
+					room: 2,
+					times: ['21:00']
+				}
+			]
+		},
+		{			
+			movieData: ygohDarkSide,
+			programming: [
+				{
+					room: 4,
+					times: ['14:10', '21:30']
+				}
+			]
+		}
 	],
 	dom: [
-		{},
-		{},
-		{},
-		{}
+		{			
+			movieData: nrtsWillOfFire,
+			programming: [
+				{
+					room: 1,
+					times: ['18:50', '21:20']
+				},
+				{
+					room: 3,
+					times: ['13:00', '15:35', '18:10', '20:45']
+				}
+			]
+		},
+		{			
+			movieData: bnhWorldHeroes,
+			programming: [
+				{
+					room: 2,
+					times: ['13:50', '16:10', '18:30']
+				}
+			]
+		},
+		{
+			movieData: jjk0,
+			programming: [
+				{
+					room: 4,
+					times: ['16:20', '21:15']
+				}
+			]
+		},
+		{
+			movieData: pkmFirstMovie,
+			programming: [
+				{
+					room: 4,
+					times: ['14:00', '18:55']
+				},
+				{
+					room: 6,
+					times: ['17:20', '20:50']
+				}
+			]
+		}
+	],
+	seg: [
+		{
+			movieData: knyMugenTrain,
+			programming: [
+				{
+					room: 1,
+					times: ['16:30']
+				},
+				{
+					room: 3,
+					times: ['14:50', '17:20']
+				}
+			]
+		},
+		{
+			movieData: dbsBroly,
+			programming: [
+				{
+					room: 4,
+					times: ['16:20', '21:15']
+				}
+			]
+		},
+		{
+			movieData: pkmFirstMovie,
+			programming: [
+				{
+					room: 4,
+					times: ['14:00', '18:55']
+				}
+			]
+		},
+		{
+			movieData: jjk0,
+			programming: [
+				{
+					room: 6,
+					times: ['17:10', '20:20']
+				}
+			]
+		}
+	],
+	ter: [
+		{
+			movieData: opStampede,
+			programming: [
+				{
+					room: 2,
+					times: ['17:50']
+				}
+			]
+		},
+		{
+			movieData: silentVoice,
+			programming: [
+				{
+					room: 2,
+					times: ['15:30']
+				}
+			]
+		},
+		{
+			movieData: saoOrdinalScale,
+			programming: [
+				{
+					room: 5,
+					times: ['15:00']
+				}
+			]
+		}
 	]
 };
 

@@ -4,8 +4,9 @@ import { changeDataByClickingDayButton } from "./changeDataByClickingDayButton.j
 
 
 function activeButton(event) {
+    // se o elemento clicado (target) for um dos filhos (p) do elemento desejado (button), o elemento clicado (target) vai passar a ser o pai do elemento clicado (target = target.parentElement)
     let target = event.target;
-    if (event.target.tagName !== 'button') {
+    if (event.target.tagName === 'p') {
         target = target.parentElement;
     }
     
