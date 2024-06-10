@@ -9,9 +9,10 @@ const knyMugenTrain = new Movie(
 	4.9,
 	'./images/movies/kny-movie-post.jpg',
 	'https://youtu.be/bFwdl2PDAFM?si=OvjCAa99hrOmlEdt',
-	'',
+	'kny-mg-sinopse',
+	`http://127.0.0.1:5500/sinopse.html?sinopse=${encodeURIComponent('kny-mg-sinopse')}`,
 	{
-		seconds: 117,
+		minutes: 117,
 		hours: '1h57 min'
 	},
 	{
@@ -29,7 +30,8 @@ const dbsBroly = new Movie(
 	4.3,
 	'./images/movies/dbs-movie-post.jpg',
 	'https://youtu.be/IRG_el_OpQg?si=uo2eorabcpmucPhw',
-	'',
+	'dbs-sinopse',
+	`http://127.0.0.1:5500/sinopse.html?sinopse=${encodeURIComponent('dbs-sinopse')}`,
 	{
 		minutes: 100,
 		hours: '1h40min'
@@ -49,7 +51,8 @@ const opStampede = new Movie(
 	4.5,
 	'./images/movies/op-stamp-movie-post.jpg',
 	'https://youtu.be/S8_YwFLCh4U?si=cKigVRWPbgLBzpIG',
-	'',
+	'op-st-sinopse',
+	`http://127.0.0.1:5500/sinopse.html?sinopse=${encodeURIComponent('op-st-sinopse')}`,
 	{
 		minutes: 100,
 		hours: '1h40min'
@@ -69,7 +72,8 @@ const pkmFirstMovie = new Movie(
 	3.5,
 	'./images/movies/pkm-movie-post.jpg',
 	'https://youtu.be/hX-NHafvY5I?si=YAXW65Oe-p3u3s5v&t=18',
-	'',
+	'pkm-sinopse',
+	`http://127.0.0.1:5500/sinopse.html?sinopse=${encodeURIComponent('pkm-sinopse')}`,
 	{
 		minutes: 75,
 		hours: '1h15min'
@@ -89,7 +93,8 @@ const silentVoice = new Movie(
 	4.8,
 	'./images/movies/sv-movie-post.jpg',
 	'https://youtu.be/nfK6UgLra7g?si=9-OSshrvvno0UpCm',
-	'',
+	'sv-sinopse',
+	`http://127.0.0.1:5500/sinopse.html?sinopse=${encodeURIComponent('sv-sinopse')}`,
 	{
 		minutes: 129,
 		hours: '2h09min'
@@ -109,7 +114,8 @@ const saoOrdinalScale = new Movie(
 	4.2,
 	'./images/movies/sao-movie-post.jpg',
 	'https://youtu.be/Xu3FqvH11To?si=Ag-BAUEfOj_gxLgm',
-	'',
+	'sao-sinopse',
+	`http://127.0.0.1:5500/sinopse.html?sinopse=${encodeURIComponent('sao-sinopse')}`,
 	{
 		minutes: 119,
 		hours: '1h59min'
@@ -129,7 +135,8 @@ const opZ = new Movie(
 	4.4,
 	'./images/movies/op-z-movie-post.jpg',
 	'https://youtu.be/1gGt1Mg_zSo?si=b8tjFetc198JA9Om',
-	'',
+	'op-z-sinopse',
+	`http://127.0.0.1:5500/sinopse.html?sinopse=${encodeURIComponent('op-z-sinopse')}`,
 	{
 		minutes: 108,
 		hours: '1h48min'
@@ -149,7 +156,8 @@ const dgmAdventure = new Movie(
 	4.6,
 	'./images/movies/dgm-movie-post.jpg',
 	'https://youtu.be/wR7U3IDmFYA?si=WrQQXFP_P_ZoxUEN',
-	'',
+	'dgm-sinopse',
+	`http://127.0.0.1:5500/sinopse.html?sinopse=${encodeURIComponent('dgm-sinopse')}`,
 	{
 		minutes: 94,
 		hours: '1h34min'
@@ -169,7 +177,8 @@ const ygohDarkSide = new Movie(
 	4.3,
 	'./images/movies/ygoh-movie-post.jpg',
 	'https://youtu.be/7tmC0KE-ASs?si=ICZGj6i2YRq53Epk',
-	'',
+	'ygoh-sinopse',
+	`http://127.0.0.1:5500/sinopse.html?sinopse=${encodeURIComponent('ygoh-sinopse')}`,
 	{
 		minutes: 130,
 		hours: '2h07min'
@@ -189,7 +198,8 @@ const nrtsWillOfFire = new Movie(
 	4.1,
 	'./images/movies/nrts-movie-post.jpg',
 	'https://youtu.be/xR62roSYoAo?si=BHHnCmjM6PR5O8tK',
-	'',
+	'nrt-sinopse',
+	`http://127.0.0.1:5500/sinopse.html?sinopse=${encodeURIComponent('nrt-sinopse')}`,
 	{
 		minutes: 96,
 		hours: '1h35min'
@@ -209,7 +219,8 @@ const bnhWorldHeroes = new Movie(
 	4.5,
 	'./images/movies/bnh-movie-post.jpg',
 	'https://youtu.be/ZclBluzAZVE?si=AQjDXSAMMAUu5lKp',
-	'',
+	'bnh-sinopse',
+	`http://127.0.0.1:5500/sinopse.html?sinopse=${encodeURIComponent('bnh-sinopse')}`,
 	{
 		minutes: 104,
 		hours: '1h44min'
@@ -229,7 +240,8 @@ const jjk0 = new Movie(
 	4.7,
 	'./images/movies/jjk-movie-post.jpg',
 	'https://youtu.be/aTpSx7ERT7w?si=kaqIdvtCmt8w8seE',
-	'',
+	'jjk-sinopse',
+	`http://127.0.0.1:5500/sinopse.html?sinopse=${encodeURIComponent('jjk-sinopse')}`,
 	{
 		minutes: 104,
 		hours: '1h44min'
@@ -240,7 +252,7 @@ const jjk0 = new Movie(
 	}
 );
 
-const WEEKDAY_PROGRAMMING = {
+const WEEK_PROGRAMMING = {
 	qua: [
 		{
 			movieData: opZ,
@@ -519,7 +531,7 @@ const WEEKDAY_PROGRAMMING = {
 	]
 };
 
-const WEEKDAY_MOVIES = {
+const WEEK_MOVIES = {
 	seg: [
 		knyMugenTrain,
 		dbsBroly,
@@ -568,6 +580,11 @@ const RATING_STAR_MAPPING_VOID_ID = 0;
 const RATING_STAR_MAPPING_FULL_ID = 1;
 const RATING_STAR_MAPPING_HALF_ID = 2;
 
+const CLASSIFICATION_MAPPING = [
+	{ age: 0, color: 'green' },
+	{ age: 18, color: 'red' },
+]
+
 export {
 	knyMugenTrain,
 	dbsBroly,
@@ -581,8 +598,8 @@ export {
 	nrtsWillOfFire,
 	bnhWorldHeroes,
 	jjk0,
-	WEEKDAY_PROGRAMMING,
-	WEEKDAY_MOVIES,
+	WEEK_PROGRAMMING,
+	WEEK_MOVIES,
 	CINEMA_START_DAY,
 	RATING_STARS_MAX_NUMBER,
 	RATING_STAR_MAPPING_VOID_ID,

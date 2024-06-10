@@ -58,9 +58,11 @@ function getRatingStarMapList(movieRating) {
     return starsMap;
 }
 
-function setMovieRatingStars(movieRating) {
-    const ratingStarLabelElement = document.getElementsByClassName('rating-label')[0];
-    const ratingStarElements = document.getElementsByClassName('rating-star');
+function setMovieRatingStars(
+    movieRating, 
+    ratingStarLabelElement,
+    ratingStarElements
+) {
     const ratingStarElementsList = Array.from(ratingStarElements);
 
     const starMapList = getRatingStarMapList(movieRating);

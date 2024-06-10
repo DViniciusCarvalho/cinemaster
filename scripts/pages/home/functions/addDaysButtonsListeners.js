@@ -1,5 +1,5 @@
 import { getCurrentWeekday } from "./getCurrentWeekday.js";
-import { WEEKDAY_MOVIES, WEEKDAY_PROGRAMMING } from "../constants.js";
+import { WEEK_MOVIES, WEEK_PROGRAMMING } from "../../../constants.js";
 import { changeDataByClickingDayButton } from "./changeDataByClickingDayButton.js";
 
 
@@ -23,8 +23,8 @@ function activeButton(event) {
     }
 
     const currentWeekday = getCurrentWeekday();
-    const weekdayMoviesData = WEEKDAY_MOVIES[currentWeekday];
-    const weekdayProgrammingData = WEEKDAY_PROGRAMMING[currentWeekday];
+    const weekdayMoviesData = WEEK_MOVIES[currentWeekday];
+    const weekdayProgrammingData = WEEK_PROGRAMMING[currentWeekday];
 
     changeDataByClickingDayButton(weekdayMoviesData, weekdayProgrammingData);
 }

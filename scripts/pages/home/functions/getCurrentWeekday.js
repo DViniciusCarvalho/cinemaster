@@ -1,4 +1,4 @@
-import { CINEMA_START_DAY } from "../constants.js";
+import { CINEMA_START_DAY } from "../../../constants.js";
 
 function getCurrentWeekday() {
     const daysButtonsElement = document.getElementById('days-buttons');

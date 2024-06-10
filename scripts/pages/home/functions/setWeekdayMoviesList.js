@@ -1,4 +1,4 @@
-import { WEEKDAY_MOVIES } from "../constants.js";
+import { WEEK_MOVIES } from "../../../constants.js";
 import { getCurrentWeekday } from "./getCurrentWeekday.js";
 import { changeDataByClickingMovie } from "./changeDataByClickingMovie.js";
 
@@ -44,7 +44,7 @@ function createAndAppendMovieListElement(imageURL, listIndex) {
         const movieWrapperIDFirstNumberPart = Number(movieWrapperIDNumberParts[0]);
         const movieOrderIndex = movieWrapperIDFirstNumberPart;
         const weekday = getCurrentWeekday();
-        const weekdayMoviesData = WEEKDAY_MOVIES[weekday];
+        const weekdayMoviesData = WEEK_MOVIES[weekday];
         const clickedMovieData = weekdayMoviesData[movieOrderIndex];
 
         changeDataByClickingMovie(clickedMovieData);

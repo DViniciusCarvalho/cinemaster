@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/footer.css">
         <link rel="stylesheet" href="styles/movies.css">
+        <script type="module" src="scripts/pages/movies/movies.js" defer></script>
         <title>Document</title>
     </head>
     <body>
@@ -29,7 +30,20 @@
             </a>
         </header>
         <main>
-            <div class="main-content"></div>
+            <div class="align-to-movie-list-section">
+                <h2>Em Cartaz</h2>
+                <div>
+                    <span>Ordenar por:</span>
+                    <select class="filter-select">
+                        <option value="alphabetic-order">Ordem Alfabética (A-Z)</option>
+                        <option value="rating">Avaliação (0-5)</option>
+                        <option value="duration">Duração em minutos (0-300)</option>
+                        <option value="classification">Classificação (L-18)</option>
+                    </select>
+                    </div>
+                </div>
+            </div>
+            <ul id="movies-list-wrapper"></ul>
         </main>
         <footer>
             &copy; 2024 &nbsp;<a href="index.html">CineMaster</a>. Todos os Direitos Reservados.

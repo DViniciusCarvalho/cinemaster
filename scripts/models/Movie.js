@@ -8,6 +8,7 @@ export default class Movie {
 		rating,
 		imageURL,
 		trailerURL,
+		sinopseLinkId,
 		pageLink,
 		duration,
 		classification,
@@ -20,6 +21,7 @@ export default class Movie {
 		this.rating = rating;
 		this.imageURL = imageURL;
 		this.trailerURL = trailerURL;
+		this.sinopseLinkId = sinopseLinkId;
 		this.pageLink = pageLink;
 		this.duration = duration;
 		this.classification = classification;

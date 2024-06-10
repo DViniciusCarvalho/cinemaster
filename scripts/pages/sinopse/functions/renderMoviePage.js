@@ -1,0 +1,5 @@
+function renderMoviePage() {
+    
+}
+
+export { renderMoviePage }
