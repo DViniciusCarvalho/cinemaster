@@ -1,5 +1,0 @@
-function renderMoviePage() {
-    
-}
-
-export { renderMoviePage }

@@ -10,27 +10,27 @@
             <p>Home</p>
         </a>
         <div class="container">
-            <form>
+            <form action="signin.php" autocomplete="off">
                 <h1>Sign in</h1>
                 <div>
                     <label for="name-input">Nome:</label>
-                    <input type="text" name="name" id="name-input">
+                    <input type="text" name="name" id="name-input" required>
                 </div>
                 <div>
                     <label for="email-input">E-mail:</label>
-                    <input type="text" name="email" id="email-input">
+                    <input type="text" name="email" id="email-input" required>
                 </div>
                 <div>
                     <label for="password-input">Senha:</label>
-                    <input type="password" name="password" id="password-input">
+                    <input type="password" name="password" id="password-input" required>
                 </div>
                 <div>
                     <label for="tel-input">Telefone:</label>
-                    <input type="tel" name="tel" id="tel-input" placeholder="xx xxxxx-xxxx">
+                    <input type="tel" name="tel" id="tel-input" placeholder="xx xxxxx-xxxx" required>
                 </div>
                 <div>
                     <label for="cpf-input">CPF:</label>
-                    <input type="text" name="cpf" id="cpf-input" placeholder="xxx.xxx.xxx-xx">
+                    <input type="text" name="cpf" id="cpf-input" placeholder="xxx.xxx.xxx-xx" required>
                 </div>
                 <button type="submit">Cadastrar</button>
                 <p>Já possui conta? <a href="login.html">Log in</a></p>

@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="styles/footer.css">
         <link rel="stylesheet" href="styles/movies.css">
         <script type="module" src="scripts/pages/movies/movies.js" defer></script>
+        <script type="module" src="scripts/common/header/header.js" defer></script>
         <title>Document</title>
     </head>
     <body>
@@ -19,10 +20,12 @@
                 </ul>
             </nav>
             <div class="header-search-wrapper">
-                <input type="text" placeholder="Por fime, gênero, direção ou classificação">
-                <button>
-                    <img src="images/search-glass.png" alt="search glass image">
+                <input id="search-input" type="text" placeholder="Por fime, gênero, direção ou classificação" autocomplete="off">
+                <button id="search-button">
+                    <img src="images/icons/search-glass.png" alt="search glass image">
                 </button>
+                <ul id="search-filtered-movies">
+                </ul>
             </div>
             <a class="header-account-wrapper" href="login.html">
                 <div class="profile-icon"></div>
@@ -34,7 +37,7 @@
                 <h2>Em Cartaz</h2>
                 <div>
                     <span>Ordenar por:</span>
-                    <select class="filter-select">
+                    <select class="filter-select" value="alphabetic-order">
                         <option value="alphabetic-order">Ordem Alfabética (A-Z)</option>
                         <option value="rating">Avaliação (0-5)</option>
                         <option value="duration">Duração em minutos (0-300)</option>

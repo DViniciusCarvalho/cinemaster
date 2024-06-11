@@ -1,35 +1,10 @@
 import { 	
-    knyMugenTrain,
-	dbsBroly,
-	opStampede,
-	pkmFirstMovie,
-	silentVoice,
-	saoOrdinalScale,
-	opZ,
-	dgmAdventure,
-	ygohDarkSide,
-	nrtsWillOfFire,
-	bnhWorldHeroes,
-	jjk0 
+	MOVIES_LIST 
 } from "../../../constants.js";
 
-const ALL_WEEK_MOVIES = [
-    knyMugenTrain,
-	dbsBroly,
-	opStampede,
-	pkmFirstMovie,
-	silentVoice,
-	saoOrdinalScale,
-	opZ,
-	dgmAdventure,
-	ygohDarkSide,
-	nrtsWillOfFire,
-	bnhWorldHeroes,
-	jjk0
-];
 
 function getMovieBySinopseLinkId(sinopseLinkId) {
-    const movieData = ALL_WEEK_MOVIES.find(function(movie) {
+    const movieData = MOVIES_LIST.find(function(movie) {
         return movie.sinopseLinkId === sinopseLinkId
     });
 

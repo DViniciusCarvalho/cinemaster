@@ -10,15 +10,15 @@
             <p>Home</p>
         </a>
         <div class="container">
-            <form>
+            <form action="login.php" autocomplete="off">
                 <h1>Log in</h1>
                 <div>
                     <label for="email-input">E-mail:</label>
-                    <input type="text" name="email" id="email-input">
+                    <input type="text" name="email" id="email-input" required>
                 </div>
                 <div>
                     <label for="password-input">Senha:</label>
-                    <input type="password" name="password" id="password-input">
+                    <input type="password" name="password" id="password-input" required>
                 </div>
                 <button type="submit">Cadastrar</button>
                 <p>Ainda não possui conta? <a href="signin.html">Sign in</a></p>

@@ -74,13 +74,13 @@ function setMovieRatingStars(
         const starMapValue = starMapList[i];
 
         if (starMapValue == RATING_STAR_MAPPING_VOID_ID) {
-            starElement.src = '../../../images/rating-void.png';
+            starElement.src = '../../../images/icons/rating-void.png';
         }
         else if (starMapValue == RATING_STAR_MAPPING_FULL_ID) {
-            starElement.src = '../../../images/rating-full.png';
+            starElement.src = '../../../images/icons/rating-full.png';
         }
         else if (starMapValue == RATING_STAR_MAPPING_HALF_ID) {
-            starElement.src = '../../../images/rating-half.png';
+            starElement.src = '../../../images/icons/rating-half.png';
         }
     }
 }

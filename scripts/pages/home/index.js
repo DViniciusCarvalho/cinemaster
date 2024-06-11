@@ -1,5 +1,5 @@
 import { WEEK_PROGRAMMING, WEEK_MOVIES, CINEMA_START_DAY } from "../../constants.js";
-import { addDaysButtonsListeners } from "./functions/addDaysButtonsListeners.js";
+import { createDaysButtonsAndAddListeners } from "./functions/createDaysButtonsAndAddListeners.js";
 import { changeDataByClickingDayButton } from "./functions/changeDataByClickingDayButton.js";
 
 export const moviePosterElement = document.getElementById('movie-poster');
@@ -12,7 +12,7 @@ function init() {
     const weekCinemaFirstDayMovies = WEEK_MOVIES[CINEMA_START_DAY];
     const weekCinemaFirstDayProgramming = WEEK_PROGRAMMING[CINEMA_START_DAY];
 
-    addDaysButtonsListeners();
+    createDaysButtonsAndAddListeners();
 
     // simula um click no botão de dia da semana para resetar todos os valores que nem um click no botão de data faria
     changeDataByClickingDayButton(weekCinemaFirstDayMovies, weekCinemaFirstDayProgramming);

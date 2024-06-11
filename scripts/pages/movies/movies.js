@@ -1,39 +1,32 @@
 import { changeMoviesList } from "./functions/changeMoviesList.js";
 import { addFilterSelectListeners } from "./functions/addFilterSelectListeners.js";
 import { 	
-    knyMugenTrain,
-	dbsBroly,
-	opStampede,
-	pkmFirstMovie,
-	silentVoice,
-	saoOrdinalScale,
-	opZ,
-	dgmAdventure,
-	ygohDarkSide,
-	nrtsWillOfFire,
-	bnhWorldHeroes,
-	jjk0 
+	MOVIES_LIST
 } from "../../constants.js";
-
-const ALL_WEEK_MOVIES = [
-    knyMugenTrain,
-	dbsBroly,
-	opStampede,
-	pkmFirstMovie,
-	silentVoice,
-	saoOrdinalScale,
-	opZ,
-	dgmAdventure,
-	ygohDarkSide,
-	nrtsWillOfFire,
-	bnhWorldHeroes,
-	jjk0
-];
+import { sortMoviesList } from "./functions/sortMoviesList.js";
+import { filterMoviesList } from "../../common/filterMoviesList.js";
 
 
 function init() {
-    changeMoviesList(ALL_WEEK_MOVIES);
-    addFilterSelectListeners(ALL_WEEK_MOVIES);
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+    const filterTextQuery = urlParams.get('filterText');
+
+    if (filterTextQuery) {
+        const filteredMoviesList = filterMoviesList(MOVIES_LIST, filterTextQuery)
+        const sortedMoviesList = sortMoviesList(filteredMoviesList);
+    
+        changeMoviesList(sortedMoviesList);
+        addFilterSelectListeners(filteredMoviesList, filterTextQuery);
+    }
+    else {
+        const sortedMoviesList = sortMoviesList(MOVIES_LIST);
+    
+        changeMoviesList(sortedMoviesList);
+        addFilterSelectListeners(MOVIES_LIST);
+    }
+
 }
 
 document.addEventListener('DOMContentLoaded', () => init());

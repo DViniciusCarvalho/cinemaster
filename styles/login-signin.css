@@ -27,7 +27,7 @@ body {
 .back-arrow-icon {
     width: 20px;
     height: 20px;
-    background-image: url('../images/back-arrow.png');
+    background-image: url('../images/icons/back-arrow.png');
     background-size: cover;
     transition: background-image .3s;
 }
@@ -40,7 +40,7 @@ body {
 }
 
 .back-arrow-wrapper:hover > .back-arrow-icon {
-    background-image: url('../images/back-arrow-hover.png');
+    background-image: url('../images/icons/back-arrow-hover.png');
 }
 
 .back-arrow-wrapper:hover > p {

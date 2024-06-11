@@ -10,7 +10,7 @@ main {
     gap: 5px;
     width: 100%;
     height: 400px;
-    background-image: url('../images/hero-section-bg-capri.jpg');
+    background-image: url('../images/backgrounds/hero-section-bg-capri.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -59,6 +59,8 @@ main {
 }
 
 .main-content > .programming-panel > .days-panel > #days-buttons {
+    display: flex;
+    gap: 3px;
     width: 100%;
     height: 60px;
 }
@@ -292,6 +294,6 @@ hr {
 .anime-background-wrapper {
     width: 100%;
     height: 600px;
-    background-image: url('../images/anime-bg.jpg');
+    background-image: url('../images/backgrounds/anime-bg.jpg');
     background-size: cover;
 }

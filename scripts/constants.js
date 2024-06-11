@@ -8,7 +8,7 @@ const knyMugenTrain = new Movie(
 	'Ação, Animação, Aventura',
 	4.9,
 	'./images/movies/kny-movie-post.jpg',
-	'https://youtu.be/bFwdl2PDAFM?si=OvjCAa99hrOmlEdt',
+	'https://www.youtube.com/embed/bFwdl2PDAFM',
 	'kny-mg-sinopse',
 	`http://127.0.0.1:5500/sinopse.html?sinopse=${encodeURIComponent('kny-mg-sinopse')}`,
 	{
@@ -29,7 +29,7 @@ const dbsBroly = new Movie(
 	'Animação, Aventura',
 	4.3,
 	'./images/movies/dbs-movie-post.jpg',
-	'https://youtu.be/IRG_el_OpQg?si=uo2eorabcpmucPhw',
+	'https://www.youtube.com/embed/IRG_el_OpQg',
 	'dbs-sinopse',
 	`http://127.0.0.1:5500/sinopse.html?sinopse=${encodeURIComponent('dbs-sinopse')}`,
 	{
@@ -50,7 +50,7 @@ const opStampede = new Movie(
 	'Ação, Aventura, Animação',
 	4.5,
 	'./images/movies/op-stamp-movie-post.jpg',
-	'https://youtu.be/S8_YwFLCh4U?si=cKigVRWPbgLBzpIG',
+	'https://www.youtube.com/embed/S8_YwFLCh4U',
 	'op-st-sinopse',
 	`http://127.0.0.1:5500/sinopse.html?sinopse=${encodeURIComponent('op-st-sinopse')}`,
 	{
@@ -71,7 +71,7 @@ const pkmFirstMovie = new Movie(
 	'Aventura, Animação, Fantasia',
 	3.5,
 	'./images/movies/pkm-movie-post.jpg',
-	'https://youtu.be/hX-NHafvY5I?si=YAXW65Oe-p3u3s5v&t=18',
+	'https://www.youtube.com/embed/hX-NHafvY5I',
 	'pkm-sinopse',
 	`http://127.0.0.1:5500/sinopse.html?sinopse=${encodeURIComponent('pkm-sinopse')}`,
 	{
@@ -92,7 +92,7 @@ const silentVoice = new Movie(
 	'Drama, Romance, Animação',
 	4.8,
 	'./images/movies/sv-movie-post.jpg',
-	'https://youtu.be/nfK6UgLra7g?si=9-OSshrvvno0UpCm',
+	'https://www.youtube.com/embed/nfK6UgLra7g',
 	'sv-sinopse',
 	`http://127.0.0.1:5500/sinopse.html?sinopse=${encodeURIComponent('sv-sinopse')}`,
 	{
@@ -113,7 +113,7 @@ const saoOrdinalScale = new Movie(
 	'Ação, Aventura, Fantasia, Ficção Científica',
 	4.2,
 	'./images/movies/sao-movie-post.jpg',
-	'https://youtu.be/Xu3FqvH11To?si=Ag-BAUEfOj_gxLgm',
+	'https://www.youtube.com/embed/Xu3FqvH11To',
 	'sao-sinopse',
 	`http://127.0.0.1:5500/sinopse.html?sinopse=${encodeURIComponent('sao-sinopse')}`,
 	{
@@ -134,7 +134,7 @@ const opZ = new Movie(
 	'Ação, Aventura, Animação',
 	4.4,
 	'./images/movies/op-z-movie-post.jpg',
-	'https://youtu.be/1gGt1Mg_zSo?si=b8tjFetc198JA9Om',
+	'https://www.youtube.com/embed/1gGt1Mg_zSo',
 	'op-z-sinopse',
 	`http://127.0.0.1:5500/sinopse.html?sinopse=${encodeURIComponent('op-z-sinopse')}`,
 	{
@@ -155,7 +155,7 @@ const dgmAdventure = new Movie(
 	'Animação, Aventura, Fantasia',
 	4.6,
 	'./images/movies/dgm-movie-post.jpg',
-	'https://youtu.be/wR7U3IDmFYA?si=WrQQXFP_P_ZoxUEN',
+	'https://www.youtube.com/embed/wR7U3IDmFYA',
 	'dgm-sinopse',
 	`http://127.0.0.1:5500/sinopse.html?sinopse=${encodeURIComponent('dgm-sinopse')}`,
 	{
@@ -176,7 +176,7 @@ const ygohDarkSide = new Movie(
 	'Animação, Ação, Fantasia',
 	4.3,
 	'./images/movies/ygoh-movie-post.jpg',
-	'https://youtu.be/7tmC0KE-ASs?si=ICZGj6i2YRq53Epk',
+	'https://www.youtube.com/embed/7tmC0KE-ASs',
 	'ygoh-sinopse',
 	`http://127.0.0.1:5500/sinopse.html?sinopse=${encodeURIComponent('ygoh-sinopse')}`,
 	{
@@ -197,7 +197,7 @@ const nrtsWillOfFire = new Movie(
 	'Ação, Aventura, Animação',
 	4.1,
 	'./images/movies/nrts-movie-post.jpg',
-	'https://youtu.be/xR62roSYoAo?si=BHHnCmjM6PR5O8tK',
+	'https://www.youtube.com/embed/xR62roSYoAo',
 	'nrt-sinopse',
 	`http://127.0.0.1:5500/sinopse.html?sinopse=${encodeURIComponent('nrt-sinopse')}`,
 	{
@@ -218,7 +218,7 @@ const bnhWorldHeroes = new Movie(
 	'Ação, Aventura, Animação',
 	4.5,
 	'./images/movies/bnh-movie-post.jpg',
-	'https://youtu.be/ZclBluzAZVE?si=AQjDXSAMMAUu5lKp',
+	'https://www.youtube.com/embed/ZclBluzAZVE',
 	'bnh-sinopse',
 	`http://127.0.0.1:5500/sinopse.html?sinopse=${encodeURIComponent('bnh-sinopse')}`,
 	{
@@ -239,7 +239,7 @@ const jjk0 = new Movie(
 	'Ação, Sobrenatural, Animação',
 	4.7,
 	'./images/movies/jjk-movie-post.jpg',
-	'https://youtu.be/aTpSx7ERT7w?si=kaqIdvtCmt8w8seE',
+	'https://www.youtube.com/embed/aTpSx7ERT7w',
 	'jjk-sinopse',
 	`http://127.0.0.1:5500/sinopse.html?sinopse=${encodeURIComponent('jjk-sinopse')}`,
 	{
@@ -574,18 +574,32 @@ const WEEK_MOVIES = {
 	]
 };
 
+const WEEK_DATES = {
+	qua: '12/06',
+	qui: '13/06',
+	sex: '14/06',
+	sab: '15/06',
+	dom: '16/06',
+	seg: '17/06',
+	ter: '18/06'
+};
+
 const CINEMA_START_DAY = 'qua';
 const RATING_STARS_MAX_NUMBER = 5;
 const RATING_STAR_MAPPING_VOID_ID = 0;
 const RATING_STAR_MAPPING_FULL_ID = 1;
 const RATING_STAR_MAPPING_HALF_ID = 2;
 
-const CLASSIFICATION_MAPPING = [
+const CLASSIFICATION_COLORS = [
 	{ age: 0, color: 'green' },
-	{ age: 18, color: 'red' },
-]
+	{ age: 10, color: 'blue' },
+	{ age: 12, color: '#ffc400' },
+	{ age: 14, color: '#ff7b00' },
+	{ age: 16, color: 'red' },
+	{ age: 18, color: 'black' },
+];
 
-export {
+const MOVIES_LIST = [
 	knyMugenTrain,
 	dbsBroly,
 	opStampede,
@@ -597,12 +611,18 @@ export {
 	ygohDarkSide,
 	nrtsWillOfFire,
 	bnhWorldHeroes,
-	jjk0,
+	jjk0
+];
+
+export {
+	MOVIES_LIST,
 	WEEK_PROGRAMMING,
 	WEEK_MOVIES,
+	WEEK_DATES,
 	CINEMA_START_DAY,
 	RATING_STARS_MAX_NUMBER,
 	RATING_STAR_MAPPING_VOID_ID,
 	RATING_STAR_MAPPING_FULL_ID,
-	RATING_STAR_MAPPING_HALF_ID
+	RATING_STAR_MAPPING_HALF_ID,
+	CLASSIFICATION_COLORS
 }

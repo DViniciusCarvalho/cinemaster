@@ -1,7 +1,8 @@
-import { changePageTitle } from "./functions/changePageTitle.js";
-import { changeSinopePageData } from "./functions/changeSinopsePageData.js";
+import { changeMovieSinopsePageTitle } from "./functions/changeMovieSinopsePageTitle.js";
+import { changeMovieSinopePageData } from "./functions/changeMovieSinopsePageData.js";
 import { getMovieBySinopseLinkId } from "./functions/getMovieBySinopseLinkId.js";
 import { addToggleInfoButtonListeners } from "./functions/addToggleInfoButtonListeners.js";
+import { addRedirectToTraileButtonListeners } from "./functions/addRedirectToTrailerButtonListeners.js";
 
 
 function init() {
@@ -11,10 +12,11 @@ function init() {
 
     const movieData = getMovieBySinopseLinkId(movieSinopseLinkId);
 
-    changePageTitle(movieData.name);
-    changeSinopePageData(movieData);
+    changeMovieSinopsePageTitle(movieData.name);
+    changeMovieSinopePageData(movieData);
 
     addToggleInfoButtonListeners();
+    addRedirectToTraileButtonListeners();
 }
 
 document.addEventListener('DOMContentLoaded', () => init());

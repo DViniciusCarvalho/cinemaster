@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/sinopse.css">
     <script type="module" src="scripts/pages/sinopse/sinopse.js" defer></script>
+    <script type="module" src="scripts/common/header/header.js" defer></script>
     <title>Sinopse</title>
 </head>
 <body>
@@ -19,10 +20,12 @@
             </ul>
         </nav>
         <div class="header-search-wrapper">
-            <input type="text" placeholder="Por fime, gênero, direção ou classificação">
-            <button>
-                <img src="images/search-glass.png" alt="search glass image">
+            <input id="search-input" type="text" placeholder="Por fime, gênero, direção ou classificação" autocomplete="off">
+            <button id="search-button">
+                <img src="images/icons/search-glass.png" alt="search glass image">
             </button>
+            <ul id="search-filtered-movies">
+            </ul>
         </div>
         <a class="header-account-wrapper" href="login.html">
             <div class="profile-icon"></div>
@@ -32,7 +35,10 @@
     <main>
         <div class="sinopse-background">
             <div class="sinopse-background-overlay">
-                <img id="movie-poster">
+                <div>
+                    <img id="movie-poster" alt="movie poster image">
+                    <button id="movie-trailer-button"></button>
+                </div>
                 <div class="sinopse-content">
                     <h1 id="movie-name">
                     </h1>
@@ -56,8 +62,49 @@
                 <div class="horizontal-line"></div>
             </div>
             <div class="info-wrapper">
-                <div id="programming-content-section">ABCD</div>
-                <div id="more-movie-info-content-section">EFGH</div>
+                <ul id="programming-content-section">
+                </ul>
+                <div id="more-movie-info-content-section">
+                    <div class="iframe-wrapper">
+                        <iframe frameborder="0" id="movie-trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </div>
+                    <h4>Sobre o filme</h4>
+                    <div id="movie-genre-list">
+                    </div>
+                    <div class="movie-classification-wrapper">
+                        <div id="movie-classification-more-info"></div>
+                        <p id="movie-classification-message"></p>
+                    </div>
+                    <div class="movie-info-wrapper">
+                        <label>
+                            <img src="images/icons/duration-clock.png" alt="clock image icon">
+                            Duração:
+                        </label>
+                        <p id="more-info-movie-duration"></p>
+                    </div>
+                    <div class="movie-info-wrapper">
+                        <label>
+                            <img src="images/icons/sinopsis.png" alt="clock image icon">
+                            Sinopse:
+                        </label>
+                        <p id="more-info-movie-sinopse"></p>
+                    </div>
+                    <div class="movie-info-wrapper">
+                        <label>
+                            <img src="images/icons/clapperboard.png" alt="clock image icon">
+                            Direção:
+                        </label>
+                        <p id="more-info-movie-direction"></p>
+                    </div>
+                    <div class="movie-info-wrapper">
+                        <label>
+                            <img src="images/icons/cast.png" alt="clock image icon">
+                            Elenco:
+                        </label>
+                        <p id="more-info-movie-cast"></p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
