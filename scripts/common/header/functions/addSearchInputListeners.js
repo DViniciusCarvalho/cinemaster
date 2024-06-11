@@ -11,17 +11,23 @@ function onKeyPress(event) {
     }
 }
 
-function onSearchInputFocus(moviesList){
+function onSearchInputFocus(event, moviesList){
     setTimeout(() => {
+        const searchInputWapper = event.target.parentElement;
+        searchInputWapper.style.borderRadius = '5px 5px 0px 0px';
+
         moviesList.style.display = 'flex';
-    }, 200)
+
+    }, 200);
 }
 
 function onSearchInputBlur(event, moviesList){
     setTimeout(() => {
+        const searchInputWapper = event.target.parentElement;
+        searchInputWapper.style.borderRadius = '5px';
+
         moviesList.style.display = 'none';
-    }, 200)
-    
+    }, 200);
 }
 
 function onSearchInput(event, moviesList){
@@ -43,8 +49,8 @@ function addSearchInputListeners(moviesList) {
         onKeyPress(event);
     });
 
-    searchInput.addEventListener('focus', function() {
-        onSearchInputFocus(moviesListElement);
+    searchInput.addEventListener('focus', function(event) {
+        onSearchInputFocus(event, moviesListElement);
     });
 
     searchInput.addEventListener('blur', function(event) {
