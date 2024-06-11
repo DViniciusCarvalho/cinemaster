@@ -9,10 +9,19 @@ main {
 }
 
 .align-to-movie-list-section > h2 {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
     color: white;
     font-weight: 400;
     font-size: 1.6em;
     margin-bottom: 20px;
+}
+
+.align-to-movie-list-section > h2 > img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
 }
 
 .align-to-movie-list-section > div {

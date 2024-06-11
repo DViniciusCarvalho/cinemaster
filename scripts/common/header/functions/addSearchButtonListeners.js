@@ -1,5 +1,6 @@
 import { redirectToMoviesList } from "./redirectToMoviesList.js";
 
+
 function addSearchButtonListeners() {
     const searchButton = document.getElementById('search-button');
     const searchInput = document.getElementById('search-input');

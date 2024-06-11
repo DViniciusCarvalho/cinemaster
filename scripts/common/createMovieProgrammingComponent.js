@@ -1,5 +1,5 @@
 /* 
-Estrura HTML criada:
+Cria a seguinte estrutura HTML:
 <li class="movie-programming">
     <h3>Nome do filme</h3>
     <div class="programming-time-wrapper">

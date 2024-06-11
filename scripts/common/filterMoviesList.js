@@ -4,6 +4,7 @@ function filterMoviesList(
     filterProperties = ['name', 'genre', 'direction', 'classification.age']
 ) {
     
+    /* Converte todos os objetos do tipo 'Movie' para o tipo 'Object' */
     moviesList = moviesList.map(
         function(movie) {
             return Object.assign({}, movie)
@@ -14,6 +15,7 @@ function filterMoviesList(
 
     const filteredMoviesList = [];
 
+    /* Puxa todos os filmes que possuem o 'filterText' nas propriedades especificadas 'filterProperties' */
     for (let movie of moviesList) {
         let anyPropertieMatched = false;
 

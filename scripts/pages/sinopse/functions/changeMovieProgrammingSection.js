@@ -1,6 +1,7 @@
 import { 
     createMovieProgrammingComponent 
 } from "../../../common/createMovieProgrammingComponent.js";
+
 import { getCapitalizedWord } from "../../../common/getWordFirstLetterUpper.js";
 import { WEEK_DATES } from "../../../constants.js";
 

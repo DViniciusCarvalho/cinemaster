@@ -3,6 +3,7 @@ import { MOVIES_LIST } from "../../constants.js";
 import { changeFilteredMoviesList } from "./functions/changeFilteredMoviesList.js";
 import { addSearchButtonListeners } from "./functions/addSearchButtonListeners.js";
 
+
 function init() {
     changeFilteredMoviesList(MOVIES_LIST);
     addSearchInputListeners(MOVIES_LIST);

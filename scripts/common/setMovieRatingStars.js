@@ -6,7 +6,10 @@ import {
 } from '../constants.js';
 
 
+/* Para cada avaliação (ex.: 4.8), a função retorna uma representação em números dos estados das estrelas (ex.: 3.5 seria 11120, sendo '1' uma estrela completa, '2' uma estrela pela metade e '0' uma estrela vazia */
+
 function getRatingStarMapList(movieRating) {
+    
     const movieRatingInteger = Math.floor(movieRating);
     const hasDecimalPart = movieRating > movieRatingInteger;
 

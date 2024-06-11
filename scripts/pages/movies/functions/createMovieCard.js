@@ -1,23 +1,22 @@
-
 /* 
-ESTRUTURA HTML CRIADA:
-    <div class="movie-wrapper">
-        <img alt="movie poster image" class="movie-poster">
-        <abbr class="movie-name">
-            <p></p>
-        </abbr>
-        <div class="movie-info-wrapper">
-            <div class="rating-wrapper">
-                <img class="rating-star" src="images/rating-void.png" alt="rating star icon">
-                <img class="rating-star" src="images/rating-void.png" alt="rating star icon">
-                <img class="rating-star" src="images/rating-void.png" alt="rating star icon">
-                <img class="rating-star" src="images/rating-void.png" alt="rating star icon">
-                <img class="rating-star" src="images/rating-void.png" alt="rating star icon">
-                <span class="rating-label">0</span>
-            </div>
-            <a class="sinopse-button">SINOPSE</a>
+Cria a seguinte estrutura HTML:
+<div class="movie-wrapper">
+    <img alt="movie poster image" class="movie-poster">
+    <abbr class="movie-name">
+        <p></p>
+    </abbr>
+    <div class="movie-info-wrapper">
+        <div class="rating-wrapper">
+            <img class="rating-star" src="images/rating-void.png" alt="rating star icon">
+            <img class="rating-star" src="images/rating-void.png" alt="rating star icon">
+            <img class="rating-star" src="images/rating-void.png" alt="rating star icon">
+            <img class="rating-star" src="images/rating-void.png" alt="rating star icon">
+            <img class="rating-star" src="images/rating-void.png" alt="rating star icon">
+            <span class="rating-label">0</span>
         </div>
+        <a class="sinopse-button">SINOPSE</a>
     </div>
+</div>
 */
 
 function createMovieCard(movieData) {

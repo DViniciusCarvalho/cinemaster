@@ -1,5 +1,6 @@
 import { CLASSIFICATION_COLORS } from "../constants.js";
 
+
 function getClassificationColor(age, classificationColorsMap) {
     const ageClassification = classificationColorsMap.find(
         function(classificationColorMap) {

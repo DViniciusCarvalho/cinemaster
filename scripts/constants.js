@@ -1,5 +1,8 @@
 import Movie from './models/Movie.js'
 
+
+/* O arquivo 'constants.js' contém todas as informações de filmes e suas programções, possui também informações fixas para que a lógica das funções utilizadas no projeto funcionem */
+
 const knyMugenTrain = new Movie(
 	'Demon Slayer: Mugen Train - O Filme',
 	'Tanjiro Kamado, junto com Inosuke Hashibira e Zenitsu Agatsuma embarcam no Trem do Infinito em uma nova missão com o Pilar de Fogo, Kyojuro Rengoku, para derrotar um demônio que tem atormentado as pessoas.',
@@ -255,6 +258,24 @@ const jjk0 = new Movie(
 const WEEK_PROGRAMMING = {
 	qua: [
 		{
+			movieData: ygohDarkSide,
+			programming: [
+				{
+					room: 4,
+					times: ['14:00', '18:30']
+				}
+			]
+		},
+		{			
+			movieData: jjk0,
+			programming: [
+				{
+					room: 2,
+					times: ['16:10', '18:30']
+				}
+			]
+		},
+		{
 			movieData: opZ,
 			programming: [
 				{
@@ -277,29 +298,11 @@ const WEEK_PROGRAMMING = {
 			]
 		},
 		{
-			movieData: ygohDarkSide,
-			programming: [
-				{
-					room: 4,
-					times: ['14:00', '18:30']
-				}
-			]
-		},
-		{
 			movieData: silentVoice,
 			programming: [
 				{
 					room: 6,
 					times: ['17:20', '20:20']
-				}
-			]
-		},
-		{			
-			movieData: jjk0,
-			programming: [
-				{
-					room: 2,
-					times: ['16:10', '18:30']
 				}
 			]
 		}
@@ -324,7 +327,7 @@ const WEEK_PROGRAMMING = {
 			]
 		},
 		{			
-			movieData: bnhWorldHeroes,
+			movieData: jjk0,
 			programming: [
 				{
 					room: 5,

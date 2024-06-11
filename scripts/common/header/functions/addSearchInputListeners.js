@@ -2,6 +2,7 @@ import { filterMoviesList } from "../../filterMoviesList.js";
 import { changeFilteredMoviesList } from "./changeFilteredMoviesList.js";
 import { redirectToMoviesList } from "./redirectToMoviesList.js";
 
+
 function onKeyPress(event) {
     const filterText = event.target.value;
 

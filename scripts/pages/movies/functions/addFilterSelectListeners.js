@@ -1,4 +1,4 @@
-import { sortMoviesList } from "./sortMoviesList.js";
+import { sortMoviesList } from "../../../common/sortMoviesList.js";
 import { changeMoviesList } from "./changeMoviesList.js";
 import { filterMoviesList } from "../../../common/filterMoviesList.js";
 

@@ -1,4 +1,6 @@
-import { createMovieProgrammingComponent } from "../../../common/createMovieProgrammingComponent.js";
+import { 
+    createMovieProgrammingComponent 
+} from "../../../common/createMovieProgrammingComponent.js";
 
 
 function setWeekdayMoviesProgramming(moviesProgrammingData){
@@ -10,7 +12,10 @@ function setWeekdayMoviesProgramming(moviesProgrammingData){
         const movieName = movieData.name;
         const movieProgrammingList = movieProgrammingData.programming;
 
-        const movieProgrammingComponent = createMovieProgrammingComponent(movieName, movieProgrammingList);
+        const movieProgrammingComponent = createMovieProgrammingComponent(
+            movieName, 
+            movieProgrammingList
+        );
 
         programmingListWrapper.appendChild(movieProgrammingComponent);
     }

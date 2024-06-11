@@ -4,13 +4,13 @@ import { setMovieRatingStars } from "../../../common/setMovieRatingStars.js";
 import { setMoviePageLink } from "../../../common/setMoviePageLink.js";
 import { setWeekdayMoviesProgramming } from "./setWeekdayMoviesProgramming.js";
 import { setMovieName } from "../../../common/setMovieName.js";
-import { 
-    moviePosterElement, 
-    movieNameAbbr, 
-    ratingStarLabelElement, 
-    ratingStarElements, 
-    sinopseButton
-} from '../index.js';
+
+
+const moviePosterElement = document.getElementById('movie-poster');
+const sinopseButton = document.getElementById('sinopse-button');
+const movieNameAbbr = document.getElementById('movie-name');
+const ratingStarLabelElement = document.getElementsByClassName('rating-label')[0];
+const ratingStarElements = document.getElementsByClassName('rating-star');
 
 
 function changeDataByClickingDayButton(

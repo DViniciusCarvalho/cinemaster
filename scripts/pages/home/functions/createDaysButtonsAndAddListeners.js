@@ -1,5 +1,10 @@
 import { getCurrentWeekday } from "./getCurrentWeekday.js";
-import { CINEMA_START_DAY, WEEK_DATES, WEEK_MOVIES, WEEK_PROGRAMMING } from "../../../constants.js";
+import { 
+    CINEMA_START_DAY, 
+    WEEK_DATES, 
+    WEEK_MOVIES, 
+    WEEK_PROGRAMMING 
+} from "../../../constants.js";
 import { changeDataByClickingDayButton } from "./changeDataByClickingDayButton.js";
 import { getCapitalizedWord } from "../../../common/getWordFirstLetterUpper.js";
 

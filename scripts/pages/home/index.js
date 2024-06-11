@@ -1,21 +1,31 @@
-import { WEEK_PROGRAMMING, WEEK_MOVIES, CINEMA_START_DAY } from "../../constants.js";
-import { createDaysButtonsAndAddListeners } from "./functions/createDaysButtonsAndAddListeners.js";
-import { changeDataByClickingDayButton } from "./functions/changeDataByClickingDayButton.js";
+import { 
+    WEEK_PROGRAMMING, 
+    WEEK_MOVIES, 
+    CINEMA_START_DAY 
+} from "../../constants.js";
 
-export const moviePosterElement = document.getElementById('movie-poster');
-export const sinopseButton = document.getElementById('sinopse-button');
-export const movieNameAbbr = document.getElementById('movie-name');
-export const ratingStarLabelElement = document.getElementsByClassName('rating-label')[0];
-export const ratingStarElements = document.getElementsByClassName('rating-star');
+import { 
+    createDaysButtonsAndAddListeners 
+} from "./functions/createDaysButtonsAndAddListeners.js";
+
+import { 
+    changeDataByClickingDayButton 
+} from "./functions/changeDataByClickingDayButton.js";
+
+
+/* Ao entrar na página 'index.html', são criados os botões de dias da semana e adicionadas funções que reagem ao evento de 'click' neles. Após isso, são pegos os dados dos filmes do primeiro dia da semana 'firstWeekDayMovies', bem como os dados de programação dos filmes do primeiro dia da semana 'firstWeekDayProgramming' e são utilizados para renderizar o conteúdo no HTML usando a função 'changeDataByClickingDatBytton'*/
 
 function init() {
-    const weekCinemaFirstDayMovies = WEEK_MOVIES[CINEMA_START_DAY];
-    const weekCinemaFirstDayProgramming = WEEK_PROGRAMMING[CINEMA_START_DAY];
+    const firstWeekDayMovies = WEEK_MOVIES[CINEMA_START_DAY];
+    const firstWeekDayProgramming = WEEK_PROGRAMMING[CINEMA_START_DAY];
 
     createDaysButtonsAndAddListeners();
 
-    // simula um click no botão de dia da semana para resetar todos os valores que nem um click no botão de data faria
-    changeDataByClickingDayButton(weekCinemaFirstDayMovies, weekCinemaFirstDayProgramming);
+    /* Simula um click no botão de dia da semana para resetar todos os valores que nem um click no botão de data faria */
+    changeDataByClickingDayButton(
+        firstWeekDayMovies, 
+        firstWeekDayProgramming
+    );
 }
 
 document.addEventListener('DOMContentLoaded', () => init());
