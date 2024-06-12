@@ -67,7 +67,7 @@ main > h2 > img {
 	width: 100%;
 	border: 1px solid rgba(255, 255, 255, 0.281);
 	border-collapse: collapse;
-	margin-bottom: 50px;
+	margin-bottom: 50px; /*espaçamento da table entre o titulo*/
 }
 
 .price-panel > .prices-wrapper > table:last-child {

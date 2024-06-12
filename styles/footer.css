@@ -15,6 +15,6 @@ footer > a {
     transition: color .3s;
 }
 
-footer > a:hover {
+footer > a:hover { /*para a cor mudar quando passa o cursor do mouse em cima*/
     color: rgb(192, 192, 192);
 }

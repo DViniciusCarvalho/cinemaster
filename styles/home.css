@@ -94,11 +94,11 @@ main {
 .main-content > .programming-panel > .days-panel > #days-buttons > button.active {
     border: 2px solid #83a4ca;
 }
-.main-content > .programming-panel > .days-panel > #days-buttons > button.active > p:first-child {
+.main-content > .programming-panel > .days-panel > #days-buttons > button.active > p:first-child { /*dias da semana*/
     color: white;
 }
 
-.main-content > .programming-panel > .days-panel > #days-buttons > button.active > p:last-child {
+.main-content > .programming-panel > .days-panel > #days-buttons > button.active > p:last-child { /*data dos dias*/
     color: #83a4ca;
     font-weight: bold;
 }  
@@ -154,7 +154,7 @@ hr {
 }
 
 .movies-panel > .left-wrapper > .movie-info-wrapper > .rating-wrapper > .rating-label {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 1.2em;
 }
 

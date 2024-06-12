@@ -107,7 +107,7 @@ header > .header-search-wrapper > #search-filtered-movies {
     overflow-y: auto;
     display: none;
     flex-direction: column;
-    z-index: 99999;
+    z-index: 99999; /*deixa o elemento na frente*/
 }
 
 header > .header-search-wrapper > #search-filtered-movies::-webkit-scrollbar {
@@ -132,8 +132,8 @@ header > .header-search-wrapper > #search-filtered-movies > li > a {
     height: 100%;
     color: black;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+    flex-direction: row-reverse; /*alinhar em flex direction row so que ao contrário*/
+    justify-content: flex-end; /*ja q esta em row reverse ele alinha os elementos no início*/
     align-items: center;
     gap: 8px;
     font-size: 0.9em;
@@ -169,7 +169,7 @@ header > .header-account-wrapper > .profile-icon {
     width: 30px;
     background-size: cover;
     background-position: center center;
-    transition: background-image .3s;
+    transition: background-image .3s; /*para ocorrer um delay quando passar o cursor do mouse em cima*/
 }
 
 header > .header-account-wrapper:hover > .profile-icon {
