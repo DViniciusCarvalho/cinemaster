@@ -25,8 +25,8 @@ body {
 }
 
 .back-arrow-icon {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background-image: url('../images/icons/back-arrow.png');
     background-size: cover;
     transition: background-image .3s;
@@ -37,6 +37,7 @@ body {
     align-items: center;
     justify-content: center;
     transition: color .3s;
+    font-size: 1em;
 }
 
 .back-arrow-wrapper:hover > .back-arrow-icon {
@@ -49,10 +50,9 @@ body {
 
 .container {
     background-color: white;
-    margin: 20px auto;
     width: 30%;
     border-radius: 10px;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 .container form {
@@ -67,11 +67,11 @@ body {
     color: #2A4267;
     text-align: center;
     margin-bottom: 4px;
-    font-size: 1.4em;
+    font-size: 1.7em;
 }
 
 .container form input {
-    padding: 5px;
+    padding: 7px;
     border-radius: 5px;
     outline: 0;
     color: rgba(17, 17, 17, 0.836);
@@ -89,23 +89,20 @@ body {
     gap: 5px;
 }
 
-.container > form > div > span {
-    display: flex;
-    gap: 4px;
-}
 
 .container > form > button[type='submit'] {
     width: 50%;
-    height: 40px;
+    height: 45px;
     padding: 10px;
     border: none;
     color: white;
     display: flex;
-    margin-top: 20px;
+    margin-top: 40px;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
     background-color: black;
+    font-size: 1em;
     transition: background-color .3s;
 }
 
