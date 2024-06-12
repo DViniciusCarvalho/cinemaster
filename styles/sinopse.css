@@ -271,7 +271,7 @@ main {
     height: 40px;
     display: flex;
     align-items: center;
-    padding: 5px;
+    padding: 5px 10px;
     background-color: #4f5153;
     gap: 10px;
     color: white;
