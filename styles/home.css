@@ -26,11 +26,12 @@ main {
 
 .hero-section > .hero-section-overlay > h1 {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.692);
+    font-size: 2.3em;
 }
 
 .hero-section > .hero-section-overlay > p {
     color: rgba(255, 255, 255, 0.904);
-    font-size: 0.95em;
+    font-size: 1.1em;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.692);
 }
 
@@ -39,11 +40,11 @@ main {
 }
 
 .main-content > .programming-panel {
-    width: calc(100% - 2 * 23px);
+    width: calc(100% - 2 * 30px);
     border: 1px solid rgba(214, 214, 214, 0.452);
 	box-shadow: 0px 0px 3px rgb(31, 77, 129);
-    padding: 15px 15px 30px 15px;
-    margin: 23px auto;
+    padding: 20px 20px 40px 20px;
+    margin: 30px auto;
 }
 
 .main-content > .programming-panel > .days-panel {
@@ -51,33 +52,34 @@ main {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    height: 100px;
+    height: 120px;
 }
 
 .main-content > .programming-panel > .days-panel > .cinema-label {
-    font-size: 0.8em;
+    font-size: 1em;
     color: white;
 }
 
 .main-content > .programming-panel > .days-panel > .cinema-name {
-    font-size: 1em;
+    font-size: 1.3em;
     color: #83a4ca;
     margin-bottom: 10px;
 }
 
 .main-content > .programming-panel > .days-panel > #days-buttons {
     display: flex;
-    gap: 3px;
+    gap: 5px;
     width: 100%;
-    height: 60px;
+    height: 100px;
 }
 
 .main-content > .programming-panel > .days-panel > #days-buttons > button {
-    width: 50px;
+    width: 65px;
     height: 100%;
     background-color: transparent;
     border: 0.1px solid rgba(119, 119, 119, 0.507);
     transition: background-color .3s;
+    font-size: 1em;
 }
 
 .main-content > .programming-panel > .days-panel > #days-buttons > button:hover {
@@ -103,7 +105,7 @@ main {
 
 hr {
     width: 100%;
-    margin: 15px 0px;
+    margin: 20px 0px;
     border: 0.1px solid rgba(255, 255, 255, 0.151);
 }
 
@@ -111,27 +113,28 @@ hr {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    height: 600px;
+    height: 700px;
 }
 
 .movies-panel > .left-wrapper {
-    width: 220px;
+    width: 290px;
 }
 
 .movies-panel > .left-wrapper > #movie-poster {
-    width: 220px;
-    height: 330px;
+    width: 290px;
+    height: 360px;
     object-fit: cover;
 }
 
 #movie-name {
     text-decoration: none;
-    margin: 8px 0px;
+    margin: 12px 0px;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     display: inline-block;
+    font-size: 1.1em;
     color: white;
 }
 
@@ -140,31 +143,32 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 220px;
-    height: 30px;
+    width: 100%;
+    height: 40px;
 }
 
 .movies-panel > .left-wrapper > .movie-info-wrapper > .rating-wrapper > img {
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
     object-fit: cover;
 }
 
 .movies-panel > .left-wrapper > .movie-info-wrapper > .rating-wrapper > .rating-label {
     color: white;
+    font-size: 1.2em;
 }
 
 .movies-panel > .left-wrapper > .movie-info-wrapper > #sinopse-button {
     text-decoration: none;
-    width: 100px;
-    height: 30px;
+    width: 130px;
+    height: 40px;
     background-color: #506d8f;
     border: 0.1px solid #10151bb9;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.192);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.7em;
+    font-size: 0.9em;
     color: white;
     border-radius: 5px;
     transition: background-color .3s;
@@ -176,8 +180,8 @@ hr {
 }
 
 .movies-panel > .right-wrapper {
-    width: calc(100% - 220px - 10px);
-    max-width: calc(100% - 220px - 10px) !important;
+    width: calc(100% - 290px - 10px);
+    max-width: calc(100% - 290px - 10px) !important;
     display: flex;
     flex-direction: column;
 }
@@ -190,8 +194,8 @@ hr {
     display: flex;
     max-width: calc(100% - 2 * 20px);
     margin: 0px 20px 20px 20px;
-    gap: 10px;
-    min-height: 190px;
+    gap: 13px;
+    min-height: 250px;
     padding: 5px 5px;
     overflow-x: auto;
     overflow-y: hidden;
@@ -203,8 +207,8 @@ hr {
 } 
 
 .movies-panel > .right-wrapper > #movies-list-wrapper > li {
-    min-width: 120px;
-    height: 180px;
+    min-width: 160px;
+    height: 240px;
     border: 0.1px solid rgba(0, 0, 0, 0.342);
     list-style-type: none;
     transition: transform 1s;
@@ -247,18 +251,19 @@ hr {
 
 .movies-panel > .right-wrapper > #programming-wrapper > .movie-programming {
     width: 100%;
-    padding: 10px;
+    padding: 10px 0px;
 }
 
 .movies-panel > .right-wrapper > #programming-wrapper > .movie-programming > h3 {
     color: #83a4ca;
     margin-bottom: 10px;
+    font-size: 1.5em;
 }
 
 .movies-panel > .right-wrapper > #programming-wrapper > .movie-programming > .programming-time-wrapper {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     display: flex;
-    padding: 6px 10px;
+    padding: 8px 12px;
     justify-content: space-between;
     align-items: center;
     border: 0.1px solid rgba(119, 119, 119, 0.507);
@@ -270,19 +275,21 @@ hr {
 
 .movies-panel > .right-wrapper > #programming-wrapper > .movie-programming > .programming-time-wrapper > .room-number {
     color:white;
+    font-size: 1.1em;
 }
 
 .movies-panel > .right-wrapper > #programming-wrapper > .movie-programming > .programming-time-wrapper > .time-buttons-wrapper {
     display: flex;
-    gap: 6px;
+    gap: 8px;
     width: 50%;
-    height: 22px;
+    height: 26px;
 }
 
 .movies-panel > .right-wrapper > #programming-wrapper > .movie-programming > .programming-time-wrapper > .time-buttons-wrapper > .time-button {
-    height: 22px;
-    width: 70px;
-    padding-top: 2px;
+    height: 26px;
+    width: 90px;
+    padding-top: 1px;
+    font-size: 1em;
     background-color: #83a4ca;
     border: none;
     border-radius: 3px;
@@ -296,12 +303,12 @@ hr {
     border: 2px solid #83a4ca;
     color: #83a4ca;
     cursor: pointer;
-    font-size: 0.7em;
+    font-size: 0.8em;
 }
 
 .anime-background-wrapper {
     width: 100%;
-    height: 600px;
+    height: 700px;
     background-image: url('../images/backgrounds/anime-bg.jpg');
     background-size: cover;
 }

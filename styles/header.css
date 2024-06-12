@@ -5,13 +5,13 @@ header {
     background-color: #010D1A;
     color: white;
     width: 100%;
-    height: 60px;
-    padding: 10px 5px;
-    font-size: 0.9em;
+    height: 80px;
+    padding: 10px 20px;
+    font-size: 1.1em;
 }
 
 header > .header-logo-wrapper {
-    width: 220px;
+    width: 292px;
     height: 100%;
 }
 
@@ -22,7 +22,7 @@ header > .header-logo-wrapper > img {
 }
 
 header > .header-menu-navbar {
-    width: 220px;
+    width: 292px;
 }
 
 header > .header-menu-navbar > ul {
@@ -35,14 +35,14 @@ header > .header-menu-navbar > ul {
 
 header > .header-menu-navbar > ul > li {
     height: 100%;
-    width: 80px;
+    width: 110px;
 }
 
 header > .header-menu-navbar > ul > li > a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 15px;
     width: 100%;
     height: 100%;
     text-decoration: none;
@@ -59,20 +59,41 @@ header > .header-menu-navbar > ul > li > a:hover  {
 header > .header-search-wrapper {
     position: relative;
     display: flex;
-    width: 300px;
-    height: 28px;
+    width: 395px;
+    height: 35px;
     border-radius: 5px;
     background-color: white;
 }
 
 header > .header-search-wrapper > input[type='text'] {
     border-radius: 5px 0px 0px 5px;
-    width: 272px;
+    width: 360px;
     padding: 10px;
     outline: 0;
     border: none;
-    font-size: 0.85em;
+    font-size: 1em;
     font-weight: lighter;
+}
+
+header > .header-search-wrapper > button {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 35px;
+    width: 35px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+header > .header-search-wrapper > button:hover {
+    cursor: pointer;
+}
+
+header > .header-search-wrapper > button > img {
+    width: 18px;
+    height: 18px;
+    object-fit: cover;
 }
 
 header > .header-search-wrapper > #search-filtered-movies {
@@ -80,7 +101,7 @@ header > .header-search-wrapper > #search-filtered-movies {
     top: 100%;
     left: 0;
     height: fit-content;
-    max-height: 150px;
+    max-height: 195px;
     width: 100%;
     list-style-type: none;
     overflow-y: auto;
@@ -95,7 +116,7 @@ header > .header-search-wrapper > #search-filtered-movies::-webkit-scrollbar {
 
 header > .header-search-wrapper > #search-filtered-movies > li {
     width: 100%;
-    height: 50px;
+    height: 65px;
     border: 1px solid rgba(177, 177, 177, 0.671);
     background-color: white;
 }
@@ -114,8 +135,8 @@ header > .header-search-wrapper > #search-filtered-movies > li > a {
     flex-direction: row-reverse;
     justify-content: flex-end;
     align-items: center;
-    gap: 5px;
-    font-size: 0.85em;
+    gap: 8px;
+    font-size: 0.9em;
     padding: 5px 10px;
 }
 
@@ -124,32 +145,11 @@ header > .header-search-wrapper > #search-filtered-movies > li > a > img {
     aspect-ratio: 2/3;
 }
 
-header > .header-search-wrapper > button {
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    height: 28px;
-    width: 28px;
-    border-radius: 0px 5px 5px 0px;
-}
-
-header > .header-search-wrapper > button:hover {
-    cursor: pointer;
-}
-
-header > .header-search-wrapper > button > img {
-    width: 18px;
-    height: 18px;
-    object-fit: cover;
-}
-
 header > .header-account-wrapper {
     display: flex;
     align-items: center;
     gap: 6px;
-    width: 130px;
+    width: 160px;
     height: 100%;
     padding: 5px;
     border: none;
@@ -165,8 +165,8 @@ header > .header-account-wrapper:hover {
 
 header > .header-account-wrapper > .profile-icon {
     background-image: url('../images/icons/profile.png');
-    height: 23px;
-    width: 23px;
+    height: 30px;
+    width: 30px;
     background-size: cover;
     background-position: center center;
     transition: background-image .3s;
@@ -180,7 +180,7 @@ header > .header-account-wrapper:hover > .profile-icon {
 
 header > .header-account-wrapper > p {
     padding: 0;
-    font-size: 14px;
+    font-size: 1.05em;
     color: white;
     text-align: center;
     transition: color .3s;
