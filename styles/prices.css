@@ -1,21 +1,89 @@
 main {
-    width: 100%;
-    padding: 30px 50px;
+	width: 100%;
+	min-height: 100vh;
+	padding: 30px 50px;
 }
 
 
 main > h2 {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    color: white;
-    font-weight: 400;
-    font-size: 1.6em;
-    margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	color: white;
+	font-weight: 400;
+	font-size: 1.6em;
+	margin-bottom: 20px;
 }
 
 main > h2 > img {
-    width: 25px;
-    height: 25px;
-    object-fit: cover;
+	width: 25px;
+	height: 25px;
+	object-fit: cover;
+}
+
+.price-panel {
+	width: 100%;
+    border: 1px solid rgba(214, 214, 214, 0.452);
+	box-shadow: 0px 0px 3px rgb(31, 77, 129);
+	padding: 15px 15px 30px 15px;
+}
+
+.price-panel > .days-panel {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+	height: fit-content;
+}
+
+.price-panel > .days-panel > .cinema-label {
+	font-size: 0.8em;
+	color: white;
+}
+
+.price-panel > .days-panel > .cinema-name {
+	font-size: 1em;
+	color: #83a4ca;
+}
+
+.price-panel > hr {
+	width: 100%;
+	margin: 10px 0px 20px 0px;
+	border: 0.1px solid rgba(255, 255, 255, 0.151);
+}
+
+.price-panel > .prices-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.price-panel > .prices-wrapper > h3 {
+	color: white;
+	margin-bottom: 15px;
+	font-weight: 400;
+}
+
+.price-panel > .prices-wrapper > table {
+	width: 100%;
+	border: 1px solid rgba(255, 255, 255, 0.281);
+	border-collapse: collapse;
+	margin-bottom: 50px;
+}
+
+.price-panel > .prices-wrapper > table:last-child {
+	margin: 0;
+}
+
+.price-panel > .prices-wrapper > table > tbody > tr > th {
+	text-align: center;
+	color: white;
+	padding: 10px;
+	font-weight: 400;
+	background-color: #435870;
+}
+
+.price-panel > .prices-wrapper > table > tbody > tr > td {
+	text-align: center;
+	color: white;
+	padding: 10px;
 }

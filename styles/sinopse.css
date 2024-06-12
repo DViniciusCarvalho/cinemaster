@@ -212,7 +212,6 @@ main {
     border-radius: 3px;
     color: #2e2e2e;
     font-weight: bold;
-    transition: background-color .3s, color .3s;
 }
 
 #programming-content-section > .movie-programming > .programming-time-wrapper > .time-buttons-wrapper > .time-button:hover {
@@ -220,6 +219,7 @@ main {
     border: 2px solid #83a4ca;
     color: #83a4ca;
     cursor: pointer;
+    font-size: 0.7em;
 }
 
 #more-movie-info-content-section {

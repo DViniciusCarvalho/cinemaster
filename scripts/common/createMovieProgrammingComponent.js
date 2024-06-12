@@ -34,6 +34,21 @@ Cria a seguinte estrutura HTML:
 </li>
 */
 
+function addMovieProgrammingTimeButtonListeners(
+    movieProgrammingTimeButton,
+    originalTime
+) {
+    movieProgrammingTimeButton.addEventListener('mouseover', function(event) {
+        const timeButton = event.target;
+        timeButton.textContent = 'COMPRAR';
+    });
+
+    movieProgrammingTimeButton.addEventListener('mouseout', function(event) {
+        const timeButton = event.target;
+        timeButton.textContent = originalTime;
+    });
+}
+
 function createMovieProgrammingComponent(programmingTitle, movieProgrammingList) {
     const movieProgrammingWrapper = document.createElement('li');
     const movieProgrammingTitleLabel = document.createElement('h3');
@@ -62,6 +77,12 @@ function createMovieProgrammingComponent(programmingTitle, movieProgrammingList)
             const movieProgrammingTimeButton = document.createElement('button');
             movieProgrammingTimeButton.textContent = movieProgrammingTime;
             movieProgrammingTimeButton.classList.add('time-button');
+
+            addMovieProgrammingTimeButtonListeners(
+                movieProgrammingTimeButton,
+                movieProgrammingTime
+            );
+
             movieProgrammingTimeButtonsWrapper.appendChild(movieProgrammingTimeButton);
         }
 
