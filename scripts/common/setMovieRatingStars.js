@@ -4,6 +4,7 @@ import {
 	RATING_STAR_MAPPING_FULL_ID,
 	RATING_STAR_MAPPING_HALF_ID
 } from '../constants.js';
+import { getDomainURL } from './getDomainURL.js';
 
 
 /* Para cada avaliação (ex.: 4.8), a função retorna uma representação em números dos estados das estrelas (ex.: 3.5 seria 11120, sendo '1' uma estrela completa, '2' uma estrela pela metade e '0' uma estrela vazia */
@@ -75,15 +76,16 @@ function setMovieRatingStars(
     for (let i = 0; i < RATING_STARS_MAX_NUMBER; i++) {
         const starElement = ratingStarElementsList[i];
         const starMapValue = starMapList[i];
+	const isGithub = getDomainURL().endsWith('.github.io');
 
         if (starMapValue == RATING_STAR_MAPPING_VOID_ID) {
-            starElement.src = './images/icons/rating-void.png';
+            starElement.src =  `${isGithub? '' : './../..'}./images/icons/rating-void.png`;
         }
         else if (starMapValue == RATING_STAR_MAPPING_FULL_ID) {
-            starElement.src = './images/icons/rating-full.png';
+            starElement.src =  `${isGithub? '' : './../..'}./images/icons/rating-full.png`;
         }
         else if (starMapValue == RATING_STAR_MAPPING_HALF_ID) {
-            starElement.src = './images/icons/rating-half.png';
+            starElement.src =  `${isGithub? '' : './../..'}./images/icons/rating-half.png`;
         }
     }
 }
