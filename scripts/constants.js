@@ -3,6 +3,10 @@ import { getDomainURL } from './common/getDomainURL.js'
 
 
 /* O arquivo 'constants.js' contém todas as informações de filmes e suas programções, possui também informações fixas para que a lógica das funções utilizadas no projeto funcionem */
+const domainURL = getDomainURL();
+const isGithub = domainURL.endsWith('.github.io');
+
+const startURL = domainURL + isGithub? '/cinemaster' : '';
 
 const knyMugenTrain = new Movie(
 	'Demon Slayer: Mugen Train - O Filme',
@@ -14,7 +18,7 @@ const knyMugenTrain = new Movie(
 	'./images/movies/kny-movie-post.jpg',
 	'https://www.youtube.com/embed/bFwdl2PDAFM',
 	'kny-mg-sinopse',
-	`${getDomainURL()}/sinopse.html?sinopse=${encodeURIComponent('kny-mg-sinopse')}`,
+	`${startURL}/sinopse.html?sinopse=${encodeURIComponent('kny-mg-sinopse')}`,
 	{
 		minutes: 117,
 		hours: '1h57 min'
@@ -35,7 +39,7 @@ const dbsBroly = new Movie(
 	'./images/movies/dbs-movie-post.jpg',
 	'https://www.youtube.com/embed/IRG_el_OpQg',
 	'dbs-sinopse',
-	`${getDomainURL()}/sinopse.html?sinopse=${encodeURIComponent('dbs-sinopse')}`,
+	`${startURL}/sinopse.html?sinopse=${encodeURIComponent('dbs-sinopse')}`,
 	{
 		minutes: 100,
 		hours: '1h40min'
@@ -56,7 +60,7 @@ const opStampede = new Movie(
 	'./images/movies/op-stamp-movie-post.jpg',
 	'https://www.youtube.com/embed/S8_YwFLCh4U',
 	'op-st-sinopse',
-	`${getDomainURL()}/sinopse.html?sinopse=${encodeURIComponent('op-st-sinopse')}`,
+	`${startURL}/sinopse.html?sinopse=${encodeURIComponent('op-st-sinopse')}`,
 	{
 		minutes: 100,
 		hours: '1h40min'
@@ -77,7 +81,7 @@ const pkmFirstMovie = new Movie(
 	'./images/movies/pkm-movie-post.jpg',
 	'https://www.youtube.com/embed/hX-NHafvY5I',
 	'pkm-sinopse',
-	`${getDomainURL()}/sinopse.html?sinopse=${encodeURIComponent('pkm-sinopse')}`,
+	`${startURL}/sinopse.html?sinopse=${encodeURIComponent('pkm-sinopse')}`,
 	{
 		minutes: 75,
 		hours: '1h15min'
@@ -98,7 +102,7 @@ const silentVoice = new Movie(
 	'./images/movies/sv-movie-post.jpg',
 	'https://www.youtube.com/embed/nfK6UgLra7g',
 	'sv-sinopse',
-	`${getDomainURL()}/sinopse.html?sinopse=${encodeURIComponent('sv-sinopse')}`,
+	`${startURL}/sinopse.html?sinopse=${encodeURIComponent('sv-sinopse')}`,
 	{
 		minutes: 129,
 		hours: '2h09min'
@@ -119,7 +123,7 @@ const saoOrdinalScale = new Movie(
 	'./images/movies/sao-movie-post.jpg',
 	'https://www.youtube.com/embed/Xu3FqvH11To',
 	'sao-sinopse',
-	`${getDomainURL()}/sinopse.html?sinopse=${encodeURIComponent('sao-sinopse')}`,
+	`${startURL}/sinopse.html?sinopse=${encodeURIComponent('sao-sinopse')}`,
 	{
 		minutes: 119,
 		hours: '1h59min'
@@ -140,7 +144,7 @@ const opZ = new Movie(
 	'./images/movies/op-z-movie-post.jpg',
 	'https://www.youtube.com/embed/1gGt1Mg_zSo',
 	'op-z-sinopse',
-	`${getDomainURL()}/sinopse.html?sinopse=${encodeURIComponent('op-z-sinopse')}`,
+	`${startURL}/sinopse.html?sinopse=${encodeURIComponent('op-z-sinopse')}`,
 	{
 		minutes: 108,
 		hours: '1h48min'
@@ -161,7 +165,7 @@ const dgmAdventure = new Movie(
 	'./images/movies/dgm-movie-post.jpg',
 	'https://www.youtube.com/embed/wR7U3IDmFYA',
 	'dgm-sinopse',
-	`${getDomainURL()}/sinopse.html?sinopse=${encodeURIComponent('dgm-sinopse')}`,
+	`${startURL}/sinopse.html?sinopse=${encodeURIComponent('dgm-sinopse')}`,
 	{
 		minutes: 94,
 		hours: '1h34min'
@@ -182,7 +186,7 @@ const ygohDarkSide = new Movie(
 	'./images/movies/ygoh-movie-post.jpg',
 	'https://www.youtube.com/embed/7tmC0KE-ASs',
 	'ygoh-sinopse',
-	`${getDomainURL()}/sinopse.html?sinopse=${encodeURIComponent('ygoh-sinopse')}`,
+	`${startURL}/sinopse.html?sinopse=${encodeURIComponent('ygoh-sinopse')}`,
 	{
 		minutes: 130,
 		hours: '2h07min'
@@ -203,7 +207,7 @@ const nrtsWillOfFire = new Movie(
 	'./images/movies/nrts-movie-post.jpg',
 	'https://www.youtube.com/embed/xR62roSYoAo',
 	'nrt-sinopse',
-	`${getDomainURL()}/sinopse.html?sinopse=${encodeURIComponent('nrt-sinopse')}`,
+	`${startURL}/sinopse.html?sinopse=${encodeURIComponent('nrt-sinopse')}`,
 	{
 		minutes: 96,
 		hours: '1h35min'
@@ -224,7 +228,7 @@ const bnhWorldHeroes = new Movie(
 	'./images/movies/bnh-movie-post.jpg',
 	'https://www.youtube.com/embed/ZclBluzAZVE',
 	'bnh-sinopse',
-	`${getDomainURL()}/sinopse.html?sinopse=${encodeURIComponent('bnh-sinopse')}`,
+	`${startURL}/sinopse.html?sinopse=${encodeURIComponent('bnh-sinopse')}`,
 	{
 		minutes: 104,
 		hours: '1h44min'
@@ -245,7 +249,7 @@ const jjk0 = new Movie(
 	'./images/movies/jjk-movie-post.jpg',
 	'https://www.youtube.com/embed/aTpSx7ERT7w',
 	'jjk-sinopse',
-	`${getDomainURL()}/sinopse.html?sinopse=${encodeURIComponent('jjk-sinopse')}`,
+	`${startURL}/sinopse.html?sinopse=${encodeURIComponent('jjk-sinopse')}`,
 	{
 		minutes: 104,
 		hours: '1h44min'
